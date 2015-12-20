@@ -1,0 +1,97 @@
+// List Styles
+.list-step {
+	margin-top: 2em;
+	list-style: none;
+	li {
+		margin: 0 0 4em 0;
+		position: relative;
+		counter-increment: step-counter;
+		figure {
+			margin: 2em 0 2em -40px;
+		}
+		&:before {
+			content: counter(step-counter);
+			display: inline-block;
+			background: $light-tomato;
+			color: white;
+			width: 26px;
+			height: 26px;
+			border-radius: 2em;
+			line-height: 26px;
+			font-weight: $semi-bold;
+			text-align: center;
+			left: -40px;
+			position: absolute;
+		}
+	}
+
+	.step-number {
+		display: none;
+	}
+
+	h4 {
+		position: relative;
+	}
+}
+
+.list-category, .list-tags {
+	padding: 20px 0 0 0;
+	border-top: 1px solid $dark-tan;
+
+	li {
+		display: inline-block;
+		margin: 0 14px 14px 0;
+		a {			
+			text-decoration: none;
+			border: 1px solid $tomato;
+			font-size: .9em;
+			padding: 3px 10px;
+			border-radius: 4px;
+			display: block;
+			text-transform: capitalize;
+			&:hover {
+				background: $light-tomato;
+				color: white;
+			}
+		}
+	}
+}
+
+.ingredient-list {
+	list-style: none;
+	padding: 0;
+	li {
+		margin-bottom: .5em;
+		display: block;
+		overflow: hidden;
+	}
+	.number {
+		float: left;
+		width: 100px;
+		color: $mid-brown;
+	}
+	.item {
+		float: left;
+		width: 50%;
+	}
+}
+
+.letter-list {
+	list-style: none;
+	li {
+		position: relative;		
+		.letter {
+			display: inline-block;
+			background: $light-tomato;
+			color: white;
+			width: 26px;
+			height: 26px;
+			border-radius: 2em;
+			line-height: 26px;
+			font-weight: $semi-bold;
+			text-align: center;
+			left: -40px;
+			position: absolute;
+		}
+	}
+}

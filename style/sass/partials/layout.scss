@@ -1,0 +1,32 @@
+html {
+	background: $dark-tan url('ui/ricepaper_@2X.png') top left;
+	background-size: 240px auto;
+}
+
+body {
+	max-width: 1200px;
+	margin: 0 auto;
+	box-shadow: 0 0 6px $gray;
+}
+
+.wrapper-bg {		
+	background: white;
+	box-shadow: 0 0 2px $gray;
+	overflow: hidden;
+	padding: 20px;
+}
+
+figure {
+	margin: 2em 0;
+	img {
+		width: 100%;
+	}
+}
+
+@media (min-width: 767px) {
+	.container-fluid {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+}

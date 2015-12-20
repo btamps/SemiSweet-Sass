@@ -1,0 +1,53 @@
+a {
+	color: $tomato;
+	&:hover {
+		color: $skyblue;
+	}
+}
+
+h1, .jumbotron h1 {
+	font-size: 1.8em;
+	font-weight: $bold;
+	color: $dark-brown;
+
+	a {
+		color: $dark-brown;
+	}
+}
+
+h2 {	
+	font-weight: $regular;
+	font-size: 1.647em;
+	margin: 2em 0 1em;
+	color: $dark-brown;
+}
+
+h3 {
+	font-weight: $semi-bold;
+	font-size: 1.294em;
+	line-height: 1.4;
+	color: $mid-brown;
+}
+
+h4 {
+	font-weight: $regular;
+	font-size: 1.2em;
+	line-height: 1.4;
+	color: $mid-brown;
+	margin-bottom: .5em;
+
+}
+
+
+p {
+	font-family: $font-serif;
+	line-height: 1.5;
+	font-size: 1.05em;
+	margin-bottom: 1em;
+}
+
+@media screen and (min-width: 768px) {
+	h1 {
+	font-size: 2.1em;		
+	}
+}

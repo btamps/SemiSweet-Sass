@@ -1,0 +1,49 @@
+// Font weights
+$light: 300;
+$regular: 400;
+$semi-bold: 600;
+$bold: 700;
+
+// Colors
+$skyblue: hsla(198,50%,55%,1);
+$light-blue: hsla(198,53%,80%,1);
+$dark-blue: hsla(198,53%,40%,1);
+$tomato: hsl(4, 86%, 56%);
+$light-tomato: hsl(4, 86%, 60%);
+$tan: #F4EBDA;
+$dark-tan: #E6DDCC;
+$egg-shell: #F8F6F2;
+$light-brown: #99897D;
+$mid-brown: #807369;
+$dark-brown: #524A43;
+$black-brown: #35302C;
+$gray: #ccc;
+
+// Base Font
+$font-sans: "source-sans-pro", helvetica, sans-serif;
+$font-serif: "ff-tisa-web-pro", georgia, times, serif;
+$base-font-weight: $regular;
+$base-font-size: 17px;
+$base-line-height: 1.4;
+
+// Headings
+$h1-weight: $bold;
+$h2-weight: $light;
+$h3-weight: $semi-bold;
+$h4-weight: $semi-bold;
+
+// Mixins and Extends
+
+
+html {
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	font-family: $font-sans;
+	font-size: $base-font-size;
+}
+
+img {
+	vertical-align: middle;
+}
