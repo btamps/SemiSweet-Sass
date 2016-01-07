@@ -12,12 +12,13 @@
 .box-wrapper {
 	background: white;
 	box-shadow: 0 0 2px $gray;
-	padding: 30px;	
+	padding: 30px;
 }
 
-.post-wrapper {	
+.post-wrapper {
 	@extend .box-wrapper;
-	padding: 0 15px;
+	padding: 0 15px 15px;
+	margin-bottom: 30px;
 }
 
 .post-wrapper header {
@@ -73,7 +74,7 @@
 
 .sidebar {
 	margin-top: 2.5em;
-	margin-left: 15px; 
+	margin-left: 15px;
 	margin-right: 15px;
 }
 
@@ -86,19 +87,19 @@
 figure {
 	&.width-300 {
 		max-width: 300px;
-		margin-right: auto;	
-		margin-left: auto;	
+		margin-right: auto;
+		margin-left: auto;
 	}
 
 	&.width-400 {
 		max-width: 400px;
-		margin-right: auto;	
+		margin-right: auto;
 		margin-left: auto;
 	}
 
 	&.width-500 {
 		max-width: 500px;
-		margin-right: auto;	
+		margin-right: auto;
 		margin-left: auto;
 	}
 }
@@ -107,7 +108,7 @@ figure {
 // Blog Home Styles and archives
 .blog {
 	.blog-box {
-		padding-top: 1em;		
+		padding-top: 1em;
 	}
 	.thumbnail {
 		& > a figure {
@@ -173,7 +174,7 @@ figure {
 		.tag-result, .recent-result {
 			display: none;
 		}
-	}	
+	}
 	&.tag {
 		.cat-result, .recent-result {
 			display: none;
@@ -196,7 +197,7 @@ figure {
 			left: 15px;
 			font-size: 1.1em;
 		}
-	}	
+	}
 }
 
 // Comment Styles
@@ -213,7 +214,7 @@ figure {
 	}
 
 	ol {
-		list-style: none;	
+		list-style: none;
 		padding-left: 40px;
 
 		& > li {
@@ -259,9 +260,9 @@ figure {
 	right: 0;
 	text-decoration: none;
 	&:before {
-		content: "#";	
-		font-size: .8em;		
-	}	
+		content: "#";
+		font-size: .8em;
+	}
 }
 
 .comment-meta a {
@@ -271,7 +272,7 @@ figure {
 	text-transform: uppercase;
 	letter-spacing: .5px;
 
-	&.comment-edit-link {			
+	&.comment-edit-link {
 		font-size: .8em;
 		font-weight: $semi-bold;
 		margin-left: .5rem;
@@ -333,7 +334,7 @@ figure {
 		text-decoration: none;
 		line-height: 1.4;
 		&.prev, &.next {
-			display: block;				
+			display: block;
 		}
 	}
 	.page-numbers {
@@ -361,16 +362,59 @@ figure {
 	}
 }
 
+// Related Posts Plugin Styles
+.bawmrp {
+		overflow: hidden;
+		@extend .box-wrapper;
+		ul {
+			display: table !important;
+			width: 100% !important;
+			padding: 0;
+			a {
+				display: block !important;
+				font-size: 14px;
+			}
+			li {
+				display: table-cell !important;
+				width: 50% !important;
+				border: 0 !important;
+				padding-right: 10px !important;
+				margin-bottom: 20px;
+				img {
+					width: 100%;
+					padding-bottom: 10px;
+				}
+			}
+		}
+}
+
+@media (min-width: 900px) {
+	.bawmrp {
+			ul {
+				width: 100% !important;
+				li {
+					width: 25% !important;
+					padding-right: 10px !important;
+					margin-bottom: 0;
+					img {
+						padding-bottom: 10px;
+					}
+				}
+			}
+	}
+}
+
 @media (min-width: 767px) {
+
 	.content-wrapper {
-		margin-top: 2.5em; 
+		margin-top: 2.5em;
 		padding-left: 0;
 		padding-right: 30px;
 	}
 
 	.blog-box .content-wrapper {
 		padding-left: 15px;
-		padding-right: 45px;		
+		padding-right: 45px;
 	}
 
 	.post-wrapper header {
@@ -402,13 +446,13 @@ figure {
 
 	.blog, .page-template-archive {
 		.blog-box {
-			padding-top: 0;		
+			padding-top: 0;
 		}
 	}
 
 	.page-template-archive,
 	.archive.category,
-	.archive.tag, 
+	.archive.tag,
 	.search {
 		.recent-result, .cat-result, .tag-result {
 			margin-left: 0;
@@ -418,14 +462,14 @@ figure {
 				padding: 30px;
 				h2 {
 					font-size: 1.647em;
-				}			
+				}
 			}
 		}
 	}
 
 	.post-box {
 		padding: 0;
-		
+
 		.thumbnail {
 			min-height: 700px;
 		}
@@ -479,7 +523,7 @@ figure {
 	}
 
 	.sidebar {
-		margin-left: 0; 
+		margin-left: 0;
 		margin-right: 0;
 	}
 }
@@ -489,8 +533,8 @@ figure {
 		padding: 20px 40px;
 
 		figure.feature-image {
-			margin-bottom: 3em; 
-			margin-left: -40px !important; 
+			margin-bottom: 3em;
+			margin-left: -40px !important;
 			margin-right: -40px !important;
 		}
 	}
