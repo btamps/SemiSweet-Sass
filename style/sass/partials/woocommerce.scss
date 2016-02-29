@@ -725,6 +725,20 @@ p.demo_store {
 	}
 }
 
+.ad-tall {
+	display: none;
+	margin: 30px auto;
+	width: auto;
+	&:before {
+		content: "Advertisement";
+		position: relative;
+		top: -5px;
+		color: $light-brown;
+		font-size: .8em;
+		letter-spacing: .5px;
+	}
+}
+
 @media (max-width: 481px) {
 	.woocommerce-billing-fields,
 	.woocommerce-shipping-fields,
@@ -757,6 +771,10 @@ p.demo_store {
 		.cart-buttons {
 			.cart {
 				display: block;
+				&:hover {
+					background: $tomato;
+					color: white;
+				}
 			}
 		}
 	}
@@ -864,6 +882,10 @@ p.demo_store {
 	.woocommerce {
 		padding: 30px;
 	}
+}
+
+.ad-tall {
+	display: block;
 }
 
 }
