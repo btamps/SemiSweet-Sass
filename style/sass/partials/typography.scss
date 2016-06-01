@@ -15,7 +15,7 @@ h1, .jumbotron h1 {
 	}
 }
 
-h2 {	
+h2 {
 	font-weight: $regular;
 	font-size: 1.647em;
 	margin: 2em 0 1em;
@@ -26,28 +26,29 @@ h3 {
 	font-weight: $semi-bold;
 	font-size: 1.294em;
 	line-height: 1.4;
-	color: $mid-brown;
+	color: $dark-brown;
 }
 
 h4 {
-	font-weight: $regular;
-	font-size: 1.2em;
+	font-weight: $semi-bold;
+	font-size: .9em;
+	text-transform: uppercase;
+	letter-spacing: 1px;
 	line-height: 1.4;
-	color: $mid-brown;
+	color: $dark-brown;
 	margin-bottom: .5em;
 
 }
 
 
 p {
-	font-family: $font-serif;
 	line-height: 1.5;
-	font-size: 1.05em;
+	font-size: 1em;
 	margin-bottom: 1em;
 }
 
 @media screen and (min-width: 768px) {
 	h1 {
-	font-size: 2.1em;		
+	font-size: 2.1em;
 	}
 }

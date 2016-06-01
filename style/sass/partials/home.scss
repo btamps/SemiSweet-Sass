@@ -61,7 +61,7 @@ h2.title {
 		line-height: 1.2;
 		a {
 			font-size: 1.1em;
-			color: $dark-brown;			
+			color: $dark-brown;
 		}
 	}
 }
@@ -78,7 +78,7 @@ h2.title {
 }
 
 .blog-box {
-	background: $egg-shell;
+	background: white url('ui/ricepaper.png') top left;
 	padding-bottom: 40px;
 	.thumbnail {
 		box-shadow: 0 0 2px $gray;
@@ -103,7 +103,7 @@ h2.title {
 
 .basics {
 	.col-md-4 {
-		text-align: center;	
+		text-align: center;
 	}
 
 	.caption {
@@ -124,7 +124,7 @@ h2.title {
 	h2.title {
 		span {
 			background: white;
-		}		
+		}
 	}
 }
 
@@ -145,7 +145,7 @@ h2.title {
 		font-size: 1.2em;
 	}
 	.newsletter-text {
-		margin: 0 auto 20px; 
+		margin: 0 auto 20px;
 		text-align: center;
 		float: none;
 	}
@@ -189,7 +189,7 @@ h2.title {
 	    position: absolute;
 	    margin: 0;
 	    border-top-left-radius: 0;
-	    border-bottom-left-radius: 0;		
+	    border-bottom-left-radius: 0;
 	}
 }
 

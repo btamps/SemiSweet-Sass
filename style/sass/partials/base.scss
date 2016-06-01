@@ -1,14 +1,14 @@
 // Font weights
 $light: 300;
 $regular: 400;
-$semi-bold: 600;
-$bold: 700;
+$semi-bold: 700;
+$bold: 900;
 
 // Colors
 $skyblue: hsla(198,50%,55%,1);
 $light-blue: hsla(198,53%,80%,1);
 $dark-blue: hsla(198,53%,40%,1);
-$tomato: hsl(4, 86%, 56%);
+$tomato: #FF5252;
 $light-tomato: hsl(4, 86%, 60%);
 $tan: #F4EBDA;
 $dark-tan: #E6DDCC;
@@ -20,7 +20,7 @@ $black-brown: #35302C;
 $gray: #ccc;
 
 // Base Font
-$font-sans: "source-sans-pro", helvetica, sans-serif;
+$font-sans: 'Lato', helvetica, sans-serif;
 $font-serif: "ff-tisa-web-pro", georgia, times, serif;
 $base-font-weight: $regular;
 $base-font-size: 17px;

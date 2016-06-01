@@ -21,9 +21,19 @@
 	margin-bottom: 30px;
 }
 
-.post-wrapper header {
+.product-wrapper {
+	@extend .box-wrapper;
+	padding: 0 15px 15px;
+	max-width: 96%;
+	float: none;
+	margin: 15px auto 30px;
+	overflow: hidden;
+}
+
+
+.post-wrapper header,
+.product-wrapper header {
 	margin-bottom: 1em;
-	border-bottom: 1px solid $dark-tan;
 	padding-bottom: 10px;
 	figure {
 		margin-left: -15px;
@@ -408,13 +418,14 @@ figure {
 
 	.content-wrapper {
 		margin-top: 2.5em;
-		padding-left: 0;
-		padding-right: 30px;
 	}
 
 	.blog-box .content-wrapper {
 		padding-left: 15px;
 		padding-right: 45px;
+	}
+	.product-wrapper {
+		margin-top: 0;
 	}
 
 	.post-wrapper header {
@@ -537,6 +548,9 @@ figure {
 			margin-left: -40px !important;
 			margin-right: -40px !important;
 		}
+	}
+	.product-wrapper {
+		max-width: none;
 	}
 	.post-box {
 		&:nth-child(odd) {
