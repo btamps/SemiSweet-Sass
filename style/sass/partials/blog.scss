@@ -428,8 +428,7 @@ figure {
 		padding: 10px 30px 15px;
 	}
 
-	.post-wrapper header {
-		margin-bottom: 2em;
+	.blog .post-wrapper header {
 		p {
 			&.comment-count {
 				float: right;
@@ -540,7 +539,7 @@ figure {
 }
 
 @media (min-width: 991px) {
-	.post-wrapper {
+	.blog .post-wrapper {
 		padding: 20px 40px;
 
 		figure.feature-image {
