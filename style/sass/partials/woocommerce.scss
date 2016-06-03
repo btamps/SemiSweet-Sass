@@ -1,58 +1,58 @@
 // Woocommerce Styles
 .archive .shop-sidebar {
-	margin-top: 10px;
-	h2 {
-		display: none;
-	}
-	h1 {
-		border-bottom: 1px solid $dark-tan;
-		padding-bottom: 20px;
-		margin-bottom: 20px;
-	}
-	form {
-		margin-bottom: 20px;
-		display: none;
+	margin-top: 2em;
+	padding-left: 0;
+
+	.menu-title {
+		background: $tomato;
+		color: white;
+		padding: 0 0	0 20px;
+		line-height: 50px;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-size: 14px;
 	}
 	.product-categories {
 		@extend .wrapper-bg;
-		margin-bottom: 20px;
+		margin: 30px 0;
 		padding: 0;
 	}
 	ul {
 		display: none;
 		list-style: none;
 		padding: 0;
-		li {
-			line-height: 40px;
-			border-top: 1px solid $light-brown;
-			padding-left: 10px;
+		> li {
+			line-height: 1;
+
 			&.top-level {
 				a {
 					font-weight: $bold;
+					padding: 20px 0 20px 20px;
 					&.selected {
 						color: $tomato;
 					}
-				}
-				&:first-child {
-					border-top: 0 !important;
 				}
 			}
 			&.sub-level {
-				margin-left: -10px;
+				background: $egg-shell;
 				a {
 					font-weight: $regular;
+					padding: 15px 0 15px 20px;
 					&.selected {
 						color: $tomato;
-						&:after {
-							content: "»";
-							margin-left: 10px;
-						}
 					}
+				}
+				&:first-child a {
+					padding-top: 30px;
+				}
+				&:last-child a {
+					padding-bottom: 30px;
 				}
 			}
 		}
 		a {
 			color: $light-brown;
+			display: block;
 			&:hover {
 				color: $skyblue;
 			}
@@ -64,6 +64,38 @@
 			width: 100%;
 			display: none;
 		}
+	}
+}
+
+// Product Search Box
+.product-search-field {
+	@extend .wrapper-bg;
+	padding: 14px 20px;
+	width: 100% !important;
+	border: 0;
+	outline: 0;
+}
+
+.product-search-box {
+	position: relative;
+	display: none;
+	i {
+		position: absolute;
+		right: 20px;
+		top: 30%;
+		color: $light-brown;
+		font-size: 20px;
+		z-index: 10;
+	}
+}
+
+.product-search-results .entry a span.title {
+	color: $light-brown;
+}
+
+.product-image {
+	.thumbnail {
+		margin-bottom: 0;
 	}
 }
 
@@ -108,10 +140,6 @@
 			color: $light-brown;
 		}
 	}
-}
-
-.archive .blog-box {
-	background: white;
 }
 
 .woocommerce {
@@ -878,6 +906,9 @@ p.demo_store {
 }
 
 @media (min-width: 768px) {
+	.product-search-box {
+		display: block;
+	}
 	.archive.woocommerce ul.products li.product {
 		padding-left: 8px;
     padding-right: 8px;
@@ -891,11 +922,13 @@ p.demo_store {
 		padding-left: 0;
     padding-right: 15px;
 	}
-	.tax-product_cat .woo-store {
+	.woo-store {
 		header h2.shop-title {
 			display: block;
 			margin: 0;
 			float: left;
+			font-size: 32px;
+			font-weight: $bold;
 		}
 	}
 	.archive .shop-sidebar {
