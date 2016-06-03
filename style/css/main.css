@@ -81,10 +81,6 @@ figure {
   figure img {
     width: 100%; }
 
-@media (min-width: 767px) {
-  .archive .container-fluid {
-    padding-left: 30px;
-    padding-right: 15px; } }
 nav .container-fluid {
   max-width: 1200px;
   margin: 0 auto; }
@@ -943,6 +939,9 @@ figure.width-500 {
     color: white;
     border-color: #FF5252; }
 
+.blog .content-box {
+  padding-top: 20px; }
+
 .bawmrp {
   overflow: hidden; }
   .bawmrp ul {
@@ -975,15 +974,21 @@ figure.width-500 {
   .content-wrapper {
     margin-top: 2.5em; }
 
-  .blog .content-box .content-wrapper, .page-template-archive .content-box .content-wrapper, .archive .content-box .content-wrapper, .search-results .content-box .content-wrapper {
-    padding-left: 15px;
-    padding-right: 45px; }
+  .blog .content-box {
+    padding-top: 0;
+    padding-left: 30px;
+    padding-right: 30px; }
+    .blog .content-box .content-wrapper {
+      padding-left: 15px;
+      padding-right: 45px; }
 
-  .home .content-wrapper .feature-image {
+  .home .content-wrapper .feature-image,
+  .page-template-archive .content-wrapper .feature-image {
     height: 300px;
     overflow: hidden;
     text-align: center; }
-    .home .content-wrapper .feature-image img {
+    .home .content-wrapper .feature-image img,
+    .page-template-archive .content-wrapper .feature-image img {
       position: relative;
       left: 100%;
       margin-left: -200%;
@@ -994,7 +999,7 @@ figure.width-500 {
     margin-top: 0;
     padding: 10px 30px 15px; }
 
-  .blog .post-wrapper header p.comment-count, .page-template-archive .post-wrapper header p.comment-count, .archive .post-wrapper header p.comment-count, .search-results .post-wrapper header p.comment-count {
+  .blog .post-wrapper header p.comment-count {
     float: right;
     display: inline-block; }
 
@@ -1009,7 +1014,7 @@ figure.width-500 {
       margin: 10px 30px 20px 0;
       float: left; }
 
-  .blog .content-box, .page-template-archive .content-box, .archive .content-box, .search-results .content-box, .page-template-archive .content-box {
+  .blog .content-box, .page-template-archive .content-box {
     padding-top: 0; }
 
   .page-template-archive .recent-result, .page-template-archive .cat-result, .page-template-archive .tag-result,
@@ -1057,15 +1062,19 @@ figure.width-500 {
     margin-left: 0;
     margin-right: 0; } }
 @media (min-width: 991px) {
-  .blog .post-wrapper, .page-template-archive .post-wrapper, .archive .post-wrapper, .search-results .post-wrapper {
+  .blog .post-wrapper {
     padding: 20px 40px; }
-    .blog .post-wrapper figure.feature-image, .page-template-archive .post-wrapper figure.feature-image, .archive .post-wrapper figure.feature-image, .search-results .post-wrapper figure.feature-image {
+    .blog .post-wrapper figure.feature-image {
       margin-bottom: 3em;
       margin-left: -40px !important;
       margin-right: -40px !important; }
 
   .product-wrapper {
     max-width: none; } }
+@media (min-width: 1199px) {
+  .blog .content-box {
+    padding-left: 15px;
+    padding-right: 15px; } }
 .newsletter {
   margin-bottom: 30px;
   background-image: repeating-linear-gradient(135deg, #ff8585 0px, #ff8585 30px, transparent 30px, transparent 50px, #53a3c6 50px, #53a3c6 80px, transparent 80px, transparent 100px);
@@ -1301,7 +1310,7 @@ figure.width-500 {
   padding: 0;
   display: block;
   width: 100%;
-  overflow: hidden;
+  overflow: visible;
   list-style: none; }
   .woocommerce ul.products li.product a {
     padding: 0; }
@@ -1311,8 +1320,10 @@ figure.width-500 {
   .woocommerce ul.products li.product img {
     width: 100%;
     margin-bottom: .5em; }
-  .woocommerce ul.products li.product a:hover h3, .woocommerce ul.products li.product a:hover .price, .woocommerce ul.products li.product a:hover .price span {
-    color: #53a3c6 !important; }
+  .woocommerce ul.products li.product a:hover {
+    box-shadow: 0 0 10px #999; }
+    .woocommerce ul.products li.product a:hover h3, .woocommerce ul.products li.product a:hover .price, .woocommerce ul.products li.product a:hover .price span {
+      color: #53a3c6 !important; }
   .woocommerce ul.products h3 {
     display: block;
     font-size: .95em;
@@ -1776,6 +1787,10 @@ p.demo_store {
   .product-search-box {
     display: block; }
 
+  .archive .content-box {
+    padding-left: 30px;
+    padding-right: 15px; }
+
   .archive.woocommerce ul.products li.product {
     padding-left: 8px;
     padding-right: 8px;
@@ -1860,3 +1875,6 @@ p.demo_store {
 
   .related-block {
     margin-top: 4.5em; } }
+@media (min-width: 1199px) {
+  .archive .content-box {
+    padding-left: 15px; } }

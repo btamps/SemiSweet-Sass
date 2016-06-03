@@ -129,7 +129,7 @@ figure {
 
 
 // Blog Home Styles and archives
-.blog {
+.blog, .page-template-archive, .archive, .search-results {
 	.thumbnail {
 		& > a figure {
 			margin-bottom: 0;
@@ -148,7 +148,6 @@ figure {
 }
 
 .page-template-archive, .archive, .search-results {
-	@extend .blog;
 	.search-field {
 		width: 100%;
 		padding: 10px 15px 10px 40px;
@@ -371,6 +370,10 @@ figure {
 	}
 }
 
+.blog .content-box {
+	padding-top: 20px;
+}
+
 // Related Posts Plugin Styles
 .bawmrp {
 		overflow: hidden;
@@ -418,13 +421,18 @@ figure {
 	.content-wrapper {
 		margin-top: 2.5em;
 	}
-
-	.blog .content-box .content-wrapper {
-		padding-left: 15px;
-		padding-right: 45px;
+	.blog .content-box {
+		padding-top: 0;
+		padding-left: 30px;
+		padding-right: 30px;
+		.content-wrapper {
+			padding-left: 15px;
+			padding-right: 45px;
+		}
 	}
 
-	.home .content-wrapper .feature-image {
+	.home .content-wrapper .feature-image,
+	.page-template-archive .content-wrapper .feature-image {
 		height: 300px;
 		overflow: hidden;
 		text-align: center;
@@ -550,4 +558,11 @@ figure {
 		max-width: none;
 	}
 
+}
+
+@media (min-width: 1199px) {
+	.blog .content-box {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
 }

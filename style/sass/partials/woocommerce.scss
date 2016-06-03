@@ -238,7 +238,7 @@
 	padding: 0;
 	display: block;
 	width: 100%;
-	overflow: hidden;
+	overflow: visible;
 	list-style: none;
 	li.product {
 		a {
@@ -257,6 +257,7 @@
 
 
 		a:hover {
+			box-shadow: 0 0 10px #999;
 			h3, .price, .price span {
 			color: $skyblue !important;
 			}
@@ -920,6 +921,10 @@ p.demo_store {
 	.product-search-box {
 		display: block;
 	}
+	.archive .content-box {
+		padding-left: 30px;
+		padding-right: 15px;
+	}
 	.archive.woocommerce ul.products li.product {
 		padding-left: 8px;
     padding-right: 8px;
@@ -1045,4 +1050,10 @@ p.demo_store {
 	margin-top: 4.5em;
 }
 
+}
+
+@media (min-width: 1199px) {
+	.archive .content-box {
+		padding-left: 15px;
+	}
 }
