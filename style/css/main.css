@@ -15,7 +15,7 @@ html {
 
 body {
   font-family: "Lato", helvetica, verdana, sans-serif;
-  font-size: 16px; }
+  font-size: 15px; }
 
 img {
   vertical-align: middle; }
@@ -54,9 +54,10 @@ h4, .woocommerce div.product form.cart .variations td.label label {
   margin-bottom: .5em; }
 
 p {
-  line-height: 1.5;
-  font-size: 1em;
-  margin-bottom: 1em; }
+  line-height: 1.7;
+  font-size: 1.05em;
+  margin-bottom: 1em;
+  font-family: "Noto Serif", georgia, times, serif; }
 
 @media screen and (min-width: 768px) {
   h1 {
@@ -107,7 +108,7 @@ nav .container-fluid {
 
 .navbar-inverse .navbar-nav > li > a {
   color: white;
-  font-weight: 400;
+  font-weight: 700;
   -webkit-transition: color .2s;
   transition: color .2s;
   letter-spacing: .25px; }
@@ -195,8 +196,8 @@ nav .container-fluid {
       background: #99897D;
       margin: 20px auto; }
   .hero-message-box p {
-    font-family: "ff-tisa-web-pro", georgia, times, serif;
-    font-size: 16px; }
+    font-family: "Noto Serif", georgia, times, serif;
+    font-size: 15px; }
 
 @media (min-width: 768px) {
   .jumbotron {
@@ -219,8 +220,8 @@ nav .container-fluid {
         background: #99897D;
         margin: 20px auto; }
     .hero-message-box p {
-      font-family: "ff-tisa-web-pro", georgia, times, serif;
-      font-size: 16px; } }
+      font-family: "Noto Serif", georgia, times, serif;
+      font-size: 15px; } }
 .btn, .comment-respond .submit, .woocommerce #respond input#submit,
 .woocommerce a.button,
 .woocommerce button.button,
@@ -981,11 +982,9 @@ figure.width-500 {
     margin-top: 0;
     padding: 10px 30px 15px; }
 
-  .post-wrapper header {
-    margin-bottom: 2em; }
-    .post-wrapper header p.comment-count {
-      float: right;
-      display: inline-block; }
+  .blog .post-wrapper header p.comment-count, .page-template-archive .post-wrapper header p.comment-count, .archive .post-wrapper header p.comment-count, .search-results .post-wrapper header p.comment-count {
+    float: right;
+    display: inline-block; }
 
   .post-wrapper figure figcaption {
     font-size: .95em; }
@@ -1060,9 +1059,9 @@ figure.width-500 {
     margin-left: 0;
     margin-right: 0; } }
 @media (min-width: 991px) {
-  .post-wrapper {
+  .blog .post-wrapper, .page-template-archive .post-wrapper, .archive .post-wrapper, .search-results .post-wrapper {
     padding: 20px 40px; }
-    .post-wrapper figure.feature-image {
+    .blog .post-wrapper figure.feature-image, .page-template-archive .post-wrapper figure.feature-image, .archive .post-wrapper figure.feature-image, .search-results .post-wrapper figure.feature-image {
       margin-bottom: 3em;
       margin-left: -40px !important;
       margin-right: -40px !important; }
@@ -1156,12 +1155,16 @@ figure.width-500 {
   padding-left: 0; }
   .archive .shop-sidebar .menu-title {
     background: #FF5252;
-    color: white;
     padding: 0 0	0 20px;
     line-height: 50px;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 14px; }
+    .archive .shop-sidebar .menu-title a {
+      color: white; }
+      .archive .shop-sidebar .menu-title a:hover {
+        color: white;
+        text-decoration: none; }
   .archive .shop-sidebar .product-categories {
     margin: 20px 0 30px 0;
     padding: 0; }
@@ -1289,6 +1292,9 @@ figure.width-500 {
   font-size: 1.2em;
   display: block;
   margin: 5px 0 10px; }
+.woocommerce table span.amount {
+  color: #807369;
+  font-weight: 700; }
 .woocommerce form.cart .input-text {
   max-width: 70px;
   height: 44px;
@@ -1665,9 +1671,11 @@ p.demo_store {
   .woocommerce-checkout .woocommerce-checkout-review-order .payment_methods .payment_box p {
     font-family: "Lato", helvetica, verdana, sans-serif; }
 .woocommerce-checkout input#place_order {
-  font-size: 1.1em;
-  padding: 18px 22px;
+  font-size: 14px;
+  padding: 0 22px;
   max-width: 250px;
+  line-height: 50px;
+  height: 50px;
   margin: 0 auto;
   float: none !important;
   color: white !important;
@@ -1759,7 +1767,10 @@ p.demo_store {
   color: white !important;
   position: relative;
   background: #FF5252 !important;
-  padding: 15px; }
+  padding: 0 18px;
+  line-height: 50px;
+  height: 50px;
+  font-size: 14px; }
   .woocommerce-cart .wc-proceed-to-checkout a.checkout-button:hover {
     background: #307c9c !important;
     border-color: #307c9c !important; }
