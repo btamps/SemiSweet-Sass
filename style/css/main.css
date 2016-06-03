@@ -280,7 +280,8 @@ nav .container-fluid {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     background: #53a3c6;
-    color: white; }
+    color: white;
+    border: 0 !important; }
     .form-inline button:hover {
       background: #f14d41;
       color: white; }
@@ -498,7 +499,8 @@ h2.title {
     margin: 0 auto;
     border-top-left-radius: 6px;
     border-bottom-left-radius: 6px;
-    font-size: .9em; }
+    font-size: .9em;
+    border: 0; }
   .newsletter-box .form-inline input {
     border: 0; }
   .newsletter-box .no-joke {
@@ -982,13 +984,28 @@ figure.width-500 {
       padding-left: 15px;
       padding-right: 45px; }
 
+  .page-template-page-store .content-wrapper,
+  .woocommerce-page .content-wrapper {
+    padding-left: 15px !important;
+    padding-right: 15px !important; }
+    .page-template-page-store .content-wrapper .post-wrapper,
+    .woocommerce-page .content-wrapper .post-wrapper {
+      padding: 0 15px 15px; }
+
+  .archive.woocommerce.category .content-wrapper,
+  .archive.woocommerce.tag .content-wrapper {
+    padding-right: 45px;
+    padding-left: 15px; }
+
   .home .content-wrapper .feature-image,
-  .page-template-archive .content-wrapper .feature-image {
+  .page-template-archive .content-wrapper .feature-image,
+  .search .content-wrapper .feature-image {
     height: 300px;
     overflow: hidden;
     text-align: center; }
     .home .content-wrapper .feature-image img,
-    .page-template-archive .content-wrapper .feature-image img {
+    .page-template-archive .content-wrapper .feature-image img,
+    .search .content-wrapper .feature-image img {
       position: relative;
       left: 100%;
       margin-left: -200%;
@@ -1121,7 +1138,10 @@ figure.width-500 {
   font-weight: 700;
   margin: 0;
   color: #524A43;
-  line-height: 1.2; }
+  line-height: 1.2;
+  letter-spacing: 0;
+  font-size: 20px;
+  text-transform: none; }
 
 .ad-box {
   overflow: hidden; }

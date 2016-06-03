@@ -431,8 +431,24 @@ figure {
 		}
 	}
 
+	.page-template-page-store .content-wrapper,
+	.woocommerce-page .content-wrapper {
+		padding-left: 15px !important;
+		padding-right: 15px !important;
+		.post-wrapper {
+			padding: 0 15px 15px;
+		}
+	}
+
+	.archive.woocommerce.category .content-wrapper,
+	.archive.woocommerce.tag .content-wrapper {
+		padding-right: 45px;
+		padding-left: 15px;
+	}
+
 	.home .content-wrapper .feature-image,
-	.page-template-archive .content-wrapper .feature-image {
+	.page-template-archive .content-wrapper .feature-image,
+	.search .content-wrapper .feature-image {
 		height: 300px;
 		overflow: hidden;
 		text-align: center;

@@ -3,9 +3,9 @@
 	margin-bottom: 30px;
 	background-image: repeating-linear-gradient(135deg, lighten( $tomato, 10%) 0px, lighten( $tomato, 10%) 30px, transparent 30px, transparent 50px, $skyblue 50px, $skyblue 80px, transparent 80px, transparent 100px);
 	padding: 10px;
-	.inner { 
-		background: white; 
-		width: 100%; 
+	.inner {
+		background: white;
+		width: 100%;
 		height: 100%;
 		padding: 30px;
 	}
@@ -59,6 +59,9 @@
 	margin: 0;
 	color: $dark-brown;
 	line-height: 1.2;
+	letter-spacing: 0;
+	font-size: 20px;
+	text-transform: none;
 }
 
 .ad-box {
