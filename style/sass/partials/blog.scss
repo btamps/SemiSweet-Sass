@@ -82,6 +82,11 @@
 	}
 }
 
+.post-box .thumbnail {
+	@extend .wrapper-bg;
+	padding: 0;
+}
+
 .sidebar {
 	margin-top: 2.5em;
 	margin-left: 15px;
@@ -117,9 +122,6 @@ figure {
 
 // Blog Home Styles and archives
 .blog {
-	.blog-box {
-		padding-top: 1em;
-	}
 	.thumbnail {
 		& > a figure {
 			margin-bottom: 0;
@@ -165,9 +167,6 @@ figure {
 
 .page-template-archive,
 .archive {
-	.blog-box {
-		padding-top: 0;
-	}
 	.recent-result, .cat-result, .tag-result {
 		margin-left: 20px;
 	}
@@ -420,7 +419,7 @@ figure {
 		margin-top: 2.5em;
 	}
 
-	.blog-box .content-wrapper {
+	.content-box .content-wrapper {
 		padding-left: 15px;
 		padding-right: 45px;
 	}
@@ -457,7 +456,7 @@ figure {
 	}
 
 	.blog, .page-template-archive {
-		.blog-box {
+		.content-box {
 			padding-top: 0;
 		}
 	}
