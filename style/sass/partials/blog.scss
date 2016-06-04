@@ -52,6 +52,11 @@
 
 }
 
+.post-wrapper header {
+	border-bottom: 1px solid $tan;
+	margin-bottom: 30px;
+}
+
 .comment-count {
 	margin-bottom: 0;
 }
@@ -372,6 +377,35 @@ figure {
 
 .blog .content-box {
 	padding-top: 20px;
+	padding-bottom: 30px;
+}
+
+// Recent Blog Posts Box
+.recent-blog-box {
+	background: white;
+	.title {
+		span {
+			background: white;
+		}
+	}
+	.thumbnail {
+		@extend .wrapper-bg;
+		padding: 0;
+		&:hover {
+			box-shadow: 0 0 10px #ccc;
+			text-decoration: none;
+			h3, .date {
+				color: $skyblue;
+			}
+		}
+		.caption {
+			padding: 15px;
+			text-align: center;
+			h3 {
+				margin-top: 0;
+			}
+		}
+	}
 }
 
 // Related Posts Plugin Styles
