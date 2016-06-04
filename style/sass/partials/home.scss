@@ -14,7 +14,7 @@ h2.title {
 	z-index: 1;
 
 	span {
-		background: $egg-shell;
+		background: $egg-shell url('ui/ricepaper.png') top left;
 		padding-left: 20px;
 		padding-right: 20px;
 	}
@@ -31,41 +31,74 @@ h2.title {
 	}
 }
 
-.highlight-post {
-	background: white;
-	box-shadow: 0 0 2px $gray;
-	overflow: hidden;
-	margin: 0;
-	padding: 0;
-}
-
-.first-post {
-	margin-left: 0;
-	margin-right: 0;
-}
-
-.first-post-image {
+.home .btn-more {
 	display: block;
-	margin-left: -15px;
-	margin-right: -15px;
+	width: 200px;
+	margin: 0 auto;
 }
-
-.caption {
-	.date {
-		margin-bottom: 10px;
-		display: block;
-	}
-	h3 {
-		margin-bottom: .5em;
-		font-weight: $bold;
-		line-height: 1.2;
+.home-recent-products {
+	list-style: none;
+	padding-left: 0;
+	padding-right: 0;
+	li {
 		a {
-			font-size: 1.1em;
-			color: $dark-brown;
+			@extend .wrapper-bg;
+			display: block;
+			padding: 0;
+			text-align: center;
+			margin-bottom: 40px;
+			.caption {
+				padding: 15px;
+				h3 {
+					margin: 0 0 10px 0;
+					font-size: 16px;
+					font-weight: $semi-bold;
+				}
+				.price {
+					font-weight: $bold;
+				}
+			}
+			&:hover {
+				box-shadow: 0 0 10px #ccc;
+				h3 {
+					color: $skyblue;
+				}
+				text-decoration: none;
+			}
+		}
+		img {
+			width: 100%;
+			display: block;
 		}
 	}
 }
 
+.caption {
+	.date {
+		margin-bottom: 5px;
+		display: block;
+	}
+	h3 {
+		margin-bottom: .5em;
+		font-weight: $semi-bold;
+		line-height: 1.3;
+		font-size: 1.2em;
+	}
+}
+
+.ad-column-block {
+	margin: 0 auto 30px;
+	max-width: 300px;
+	overflow: hidden;
+	&:after {
+		content: "Advertisement";
+		position: relative;
+		bottom: 0;
+		color: $light-brown;
+		font-size: .8em;
+		letter-spacing: .5px;
+	}
+}
 
 .thumbnail {
 	padding: 0;
@@ -102,28 +135,37 @@ h2.title {
 }
 
 .basics {
-	.col-md-4 {
-		text-align: center;
-	}
 
 	.caption {
+		text-align: center;
 		padding: 10px;
 	}
 	.thumbnail {
-		box-shadow: none;
+		@extend .wrapper-bg;
+		padding: 0;
 		margin-bottom: 0;
+		&:hover {
+			text-decoration: none;
+			box-shadow: 0 0 10px $gray;
+			h3, h4 {
+				color: $skyblue;
+			}
+		}
 	}
 	h3 {
 		margin-top: 0;
+		color: $dark-brown;
 	}
 	h4 {
-		font-size: 1.1em;
+		font-size: 1em;
 		letter-spacing: 0;
+		color: $light-brown;
+		font-weight: $regular;
 	}
 
 	h2.title {
 		span {
-			background: white;
+			background: $egg-shell url('ui/ricepaper.png') top left;
 		}
 	}
 }
@@ -177,7 +219,8 @@ h2.title {
 @media (min-width: 767px) {
 	h2.title {
 	font-size: 1.4em;
-	margin-bottom: 40px;
+	margin-top: 40px !important;
+	margin-bottom: 40px !important;
 	}
 
 	.basics .thumbnail {
