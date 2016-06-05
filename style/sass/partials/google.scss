@@ -1,0 +1,77 @@
+// Google Ads
+
+.ad-bottom-wide {
+	display: none;
+}
+
+.ad-tall {
+	display: none;
+}
+
+.ad-box {
+	overflow: hidden;
+}
+
+.ad-300x250 {
+	margin: 5px auto 30px;
+	width: 300px;
+	&:before {
+		content: "Advertisement";
+		position: relative;
+		top: -5px;
+		color: $light-brown;
+		font-size: .8em;
+		letter-spacing: .5px;
+	}
+}
+
+// Recent Blog Block
+.ad-column-block {
+	margin: 0 auto 30px;
+	max-width: 300px;
+	overflow: hidden;
+	&:after {
+		content: "Advertisement";
+		position: relative;
+		bottom: 0;
+		color: $light-brown;
+		font-size: .8em;
+		letter-spacing: .5px;
+	}
+}
+
+@media (min-width: 767px) {
+
+	.ad-bottom-wide {
+		display: block;
+		background: $light-gray;
+		overflow: hidden;
+	}
+	.ad-320x100 {
+		margin: 30px auto;
+		width: 320px;
+		height: 100px;
+		&:before {
+			content: "Advertisement";
+			position: relative;
+			top: -5px;
+			color: $light-brown;
+			font-size: .8em;
+			letter-spacing: .5px;
+		}
+	}
+
+	.ad-tall {
+		display: block;
+		margin: 30px auto;
+		width: auto;
+		&:before {
+			content: "Advertisement";
+			position: relative;
+			top: -5px;
+			color: $light-brown;
+			font-size: .8em;
+			letter-spacing: .5px;
+		}
+	}
+}

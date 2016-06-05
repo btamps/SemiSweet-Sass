@@ -70,20 +70,3 @@
 	font-size: 20px;
 	text-transform: none;
 }
-
-.ad-box {
-	overflow: hidden;
-}
-
-.ad-300x250 {
-	margin: 5px auto 30px;
-	width: 300px;
-	&:before {
-		content: "Advertisement";
-		position: relative;
-		top: -5px;
-		color: $light-brown;
-		font-size: .8em;
-		letter-spacing: .5px;
-	}
-}

@@ -86,20 +86,6 @@ h2.title {
 	}
 }
 
-.ad-column-block {
-	margin: 0 auto 30px;
-	max-width: 300px;
-	overflow: hidden;
-	&:after {
-		content: "Advertisement";
-		position: relative;
-		bottom: 0;
-		color: $light-brown;
-		font-size: .8em;
-		letter-spacing: .5px;
-	}
-}
-
 .thumbnail {
 	padding: 0;
 	border-radius: 0;
