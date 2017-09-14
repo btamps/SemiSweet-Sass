@@ -19,6 +19,18 @@
 	@extend .box-wrapper;
 	padding: 0 15px 15px;
 	margin-bottom: 30px;
+	p {
+		color: $chocolate-dark;
+		a {
+			text-decoration: none;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+	h4 {
+		font-size: 1em;
+	}
 }
 
 .product-wrapper {
@@ -39,21 +51,46 @@
 		margin-left: -15px;
 		margin-right: -15px;
 	}
-	h1 a, p {
-		padding: 0;
-		color: $dark-brown;
-		font-family: $font-sans;
+	h1 {
+		margin-top: 0;
+		a {
+			padding: 0;
+			color: $chocolate-dark;
+			font-family: $font-sans;
+			display: inline-block;
+			&:hover {
+				color: $chocolate;
+			}
+		}
+	}
+	p, p a {
+		color: $choco;
+		font-size: 1em;
+		font-family: $font-serif;
+		font-style: italic;
 		display: inline-block;
+		text-decoration: none;
 	}
-	p {
-		color: $mid-brown;
-		font-size: .95em;
+	p a:hover {
+		color: $red;
 	}
-
+	p span {
+		margin: 0 8px;
+	}
+	h4 {
+		font-size: 1em;
+		margin-bottom: 1em;
+		a {
+			color: $red;
+			&:hover {
+				color: $chocolate;
+			}
+		}
+	}
 }
 
 .post-wrapper header {
-	border-bottom: 1px solid $tan;
+	border-bottom: 1px solid lighten($choco, 20%);
 	margin-bottom: 30px;
 }
 
@@ -71,19 +108,21 @@
 }
 
 .sidenote {
-	border: 1px solid $dark-tan;
-	padding: 20px 20px 0;
-	border-radius: .5em;
+	border: 1px solid $cream-dark;
+	padding: 0 20px;
+	border-radius: 6px;
 	margin-bottom: 1em;
-	h3 i {
-		font-size: 1.2em;
-		margin-right: .1em;
-		color: $mid-brown;
+
+	h3 {
+		font-size: 1.25em;
+		color: $choco;
+		font-weight: $regular;
 	}
 
 	p {
 		font-family: $font-sans;
-		color: $light-brown;
+		color: $choco;
+		line-height: 1.5;
 	}
 }
 
@@ -94,7 +133,7 @@
 		@extend .btn;
 		@extend .btn-more;
     display: block;
-    margin: 2em auto 0;
+    margin: 2em auto 0 !important;
     width: 180px;
     text-align: center;
 	}
@@ -109,7 +148,7 @@
 
 .date {
 	font-size: .9em;
-	color: $light-brown;
+	color: $chocolate;
 }
 
 figure {
@@ -142,7 +181,7 @@ figure {
 		h2 {
 			margin: .2em 0 .75em;
 			a {
-				color: $dark-brown;
+				color: $chocolate-text;
 				font-size: 1em;
 				line-height: 1.2em;
 				font-weight: $bold;
@@ -175,6 +214,35 @@ figure {
 		margin-left: 20px;
 	}
 }
+.page-template-archive {
+	.archive-list, .archive-list ul {
+		padding: 0;
+		list-style: none;
+		li {
+			margin-bottom: .5em;
+			font-size: 16px;
+			h3 {
+				margin-bottom: 0;
+				font-weight: $regular;
+				color: $chocolate-text;
+			}
+		}
+		ul.posts {
+			list-style: initial !important;
+			padding-left: 1.25em !important;
+		}
+	}
+	.archive-list {
+		& > li {
+			margin-bottom: 2em;
+		}
+		.months li h3 {
+			margin-bottom: 1em;
+			font-weight: $bold;
+			font-size: 16px;
+		}
+	}
+}
 
 .page-template-archive, .search-results {
 	.cat-result, .tag-result {
@@ -182,15 +250,45 @@ figure {
 	}
 }
 
+.page-template-archive h2.page-title {
+		display: none;
+}
+
 .archive {
 	&.category {
-		.tag-result, .recent-result {
+		.tag-result, .recent-result, h2.page-title {
 			display: none;
 		}
 	}
 	&.tag {
-		.cat-result, .recent-result {
+		.cat-result, .recent-result, h2.page-title {
 			display: none;
+		}
+	}
+	&.search-results {
+		.cat-result, .recent-result, .tag-result {
+			display: none;
+		}
+	}
+}
+
+.post-tags, .category-list {
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: 1em;
+	li {
+		display: inline;
+		margin-right: 10px;
+		a {
+			border: 1px solid $choco;
+			border-radius: 2em;
+			display: inline-block;
+			padding: 0 10px;
+			text-transform: capitalize;
+			font-size: 14px;
+			&:hover {
+				border-color: $red;
+			}
 		}
 	}
 }
@@ -252,7 +350,7 @@ figure {
 	border-radius: 2em;
 	width: 40px;
 	height: 40px;
-	border: 1px solid $light-brown;
+	border: 1px solid $choco;
 }
 
 .comment-author {
@@ -265,7 +363,7 @@ figure {
 }
 
 .comment-parent-count {
-	color: $light-brown;
+	color: $choco;
 	font-size: 1em;
 	font-weight: normal;
 	position: absolute;
@@ -279,7 +377,7 @@ figure {
 }
 
 .comment-meta a {
-	color: $mid-brown;
+	color: $choco;
 	font-size: .8em;
 	font-weight: normal;
 	text-transform: uppercase;
@@ -306,15 +404,15 @@ figure {
 	label {
 		font-family: $font-sans;
 		font-weight: $semi-bold;
-		color: $dark-brown;
+		color: $chocolate-text;
 	}
 
 	textarea, input[type='text'] {
 		width: 100%;
-		border-radius: 6px;
-		border: 1px solid $gray;
+		border-radius: 4px;
+		border: 1px solid lighten($choco, 20%);
 		font-family: $font-sans;
-		padding: .25em;
+		padding: .25em 10px;
 	}
 
 	.submit {
@@ -332,52 +430,73 @@ figure {
 	}
 }
 
-.page_nav {
+.pagination-wrapper {
 	overflow: hidden;
+}
+.page_nav {
 	text-align: center;
-	margin: 0 2rem;
+	margin: 0 auto;
 	display: block;
+	position: relative;
+	left: 50%;
+	float: left;
 	a, span {
-		display: none;
 		float: left;
 		background: white;
 		padding: 6px 12px;
-		margin-left: -1px;
+		margin-left: 10px;
 		border: 1px solid $gray;
 		text-decoration: none;
 		line-height: 1.4;
 		&.prev, &.next {
 			display: block;
+			font-family: FontAwesome;
 		}
 	}
 	.page-numbers {
+		display: block;
+		position: relative;
+		float: left;
+		right: 50%;
+
 		&:first-child {
-			border-top-left-radius: 4px;
-			border-bottom-left-radius: 4px;
 			margin-left: 0;
-		}
-		&:last-child {
-			border-top-right-radius: 4px;
-			border-bottom-right-radius: 4px;
 		}
 	}
 	.dots {
-		color: $light-brown;
+		color: $choco;
+		background: transparent;
+		border: 0;
+		width: 20px;
+		padding-left: 0;
+		padding-right: 0;
+		text-align: center;
 	}
 	.current {
 		background: none;
-		color: $light-brown;
+		color: $choco;
 	}
 	a:hover {
-		background: $tomato;
+		background: $red;
 		color: white;
-		border-color: $tomato;
+		border-color: $red;
 	}
 }
 
 .blog .content-box {
 	padding-top: 20px;
 	padding-bottom: 30px;
+}
+
+
+.single.blog .content-box {
+	padding-top: 0;
+}
+
+.post-box {
+	.thumbnail .caption {
+		padding: 30px 20px;
+	}
 }
 
 // Recent Blog Posts Box
@@ -395,7 +514,7 @@ figure {
 			box-shadow: 0 0 10px #ccc;
 			text-decoration: none;
 			h3, .date {
-				color: $skyblue;
+				color: $red;
 			}
 		}
 		.caption {
@@ -466,7 +585,7 @@ figure {
 	}
 
 	.page-template-page-store .content-wrapper,
-	.woocommerce-page .content-wrapper {
+	.woocommerce-page.single-product .content-wrapper {
 		padding-left: 15px !important;
 		padding-right: 15px !important;
 		.post-wrapper {
@@ -548,25 +667,6 @@ figure {
 			h2 {
 				font-size: 2em;
 			}
-		}
-	}
-
-	.paged {
-		.post-box {
-			&:first-child {
-				h2 {
-					font-size: 1.647em;
-				}
-				.caption {
-					padding: 30px;
-				}
-			}
-		}
-	}
-
-	.page_nav {
-		a, span {
-			display: block;
 		}
 	}
 

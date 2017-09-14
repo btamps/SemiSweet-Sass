@@ -4,7 +4,7 @@ nav .container-fluid {
 }
 
 .navbar-inverse {
-	background: $skyblue;
+	background: $blue;
 	margin-bottom: 0;
 	border: 0;
 }
@@ -15,14 +15,14 @@ nav .container-fluid {
 }
 
 .navbar-inverse .navbar-toggle {
-	border-color: $dark-blue;
+	border-color: $blue;
 	&:hover {
-		background: $dark-blue;
+		background: $blue-dark;
 	}
 }
 
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
-	border-color: $dark-blue;
+	border-color: $blue-dark;
 }
 
 .navbar-inverse .navbar-nav>li>a {
@@ -32,7 +32,7 @@ nav .container-fluid {
     transition: color .2s;
     letter-spacing: .25px;
 	&:hover {
-		background: $dark-blue;
+		background: $blue;
 	}
 }
 
@@ -63,8 +63,8 @@ nav .container-fluid {
 	}
 	a {
 		display: inline-block;
-		background: $light-blue;
-		color: $skyblue !important;
+		background: $blue-lite;
+		color: $blue !important;
 		border-radius: 2rem;
 		width: 32px;
 		height: 32px;
@@ -74,8 +74,8 @@ nav .container-fluid {
 		padding: 0 !important;
 
 		&:hover {
-			color: white !important;
-			background: $dark-blue !important;
+			color: $blue !important;
+			background: white !important;
 			border: 0 !important;
 		}
 	}
