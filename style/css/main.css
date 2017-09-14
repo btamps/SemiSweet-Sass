@@ -311,6 +311,10 @@ textarea:focus,
 button:focus {
   outline: none; }
 
+.form-control:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
 .form-inline {
   position: relative; }
   .form-inline .form-group {
