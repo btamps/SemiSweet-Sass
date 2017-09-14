@@ -91,8 +91,8 @@ nav .container-fluid {
 	margin-top: 0;
 	margin-bottom: 0;
 	width: 100%;
-	border-top: 1px solid $black-brown;
-	border-bottom: 1px solid $black-brown;
+	border-top: 1px solid $chocolate-text;
+	border-bottom: 1px solid $chocolate-text;
 }
 
 .navbar-inverse .navbar-toggle {
@@ -107,7 +107,7 @@ nav .container-fluid {
 }
 
 .navbar-inverse .navbar-nav>li>a {
-	color: $black-brown;
+	color: $chocolate-text;
 	font-weight: $semi-bold;
 	text-transform: uppercase;
 	-webkit-transition: color .2s;

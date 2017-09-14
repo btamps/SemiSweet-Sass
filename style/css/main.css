@@ -43,7 +43,7 @@ h2 {
 h3 {
   font-weight: 400;
   line-height: 1.4;
-  color: #A1887F; }
+  color: #CDBFBA; }
 
 h4, .woocommerce div.product form.cart .variations td.label label {
   font-weight: 700;
@@ -83,7 +83,7 @@ figure {
     width: 100%; }
 
 .top-bar {
-  background: #3A96C1;
+  background: #78B6D7;
   overflow: hidden; }
 
 .nav-social {
@@ -107,7 +107,7 @@ figure {
     text-align: center;
     padding: 0 !important; }
     .nav-social a:hover {
-      color: #3A96C1 !important;
+      color: #78B6D7 !important;
       background: white !important;
       border: 0 !important; }
 
@@ -161,26 +161,26 @@ nav .container-fluid {
   margin-top: 0;
   margin-bottom: 0;
   width: 100%;
-  border-top: 1px solid #35302C;
-  border-bottom: 1px solid #35302C; }
+  border-top: 1px solid #5D4037;
+  border-bottom: 1px solid #5D4037; }
 
 .navbar-inverse .navbar-toggle {
-  border-color: #3A96C1; }
+  border-color: #78B6D7; }
   .navbar-inverse .navbar-toggle:hover {
-    background: #1c8fcd; }
+    background: #1C8FCD; }
 
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
-  border-color: #1c8fcd; }
+  border-color: #1C8FCD; }
 
 .navbar-inverse .navbar-nav > li > a {
-  color: #35302C;
+  color: #5D4037;
   font-weight: 700;
   text-transform: uppercase;
   -webkit-transition: color .2s;
   transition: color .2s;
   letter-spacing: .25px; }
   .navbar-inverse .navbar-nav > li > a:hover {
-    color: #3A96C1; }
+    color: #78B6D7; }
 
 .navbar-inverse .navbar-nav > li.current_page_item a {
   font-weight: 900; }
@@ -192,7 +192,7 @@ nav .container-fluid {
   .navbar-nav > li > a {
     padding: 15px 20px; }
     .navbar-nav > li > a:hover {
-      color: #3A96C1; } }
+      color: #78B6D7; } }
 @media (min-width: 1190px) {
   .navbar .container-fluid {
     padding: 0; } }
@@ -219,7 +219,7 @@ nav .container-fluid {
       display: block;
       height: 2px;
       width: 100px;
-      background: #A1887F;
+      background: #CDBFBA;
       margin: 20px auto; }
   .hero-message-box h4, .hero-message-box .woocommerce div.product form.cart .variations td.label label, .woocommerce div.product form.cart .variations td.label .hero-message-box label {
     color: #FF5352; }
@@ -247,7 +247,7 @@ nav .container-fluid {
         display: block;
         height: 2px;
         width: 100px;
-        background: #A1887F;
+        background: #CDBFBA;
         margin: 20px auto; }
     .hero-message-box p {
       font-family: "Noto Serif", georgia, times, serif;
@@ -308,9 +308,9 @@ nav .container-fluid {
     width: 100%;
     height: 44px;
     border-radius: 3px;
-    border-color: #ccbfba;
+    border-color: #f8f6f5;
     font-size: 16px;
-    color: #A1887F;
+    color: #CDBFBA;
     font-weight: 700; }
   .form-inline button {
     position: absolute;
@@ -322,7 +322,7 @@ nav .container-fluid {
     min-width: 60px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
-    background: #3A96C1;
+    background: #78B6D7;
     color: white;
     border: 0 !important; }
     .form-inline button:hover {
@@ -330,18 +330,18 @@ nav .container-fluid {
       color: white; }
 
 .form-control::-webkit-input-placeholder {
-  color: #A1887F; }
+  color: #CDBFBA; }
 
 .form-control:-moz-placeholder {
   /* Firefox 18- */
-  color: #A1887F; }
+  color: #CDBFBA; }
 
 .form-control::-moz-placeholder {
   /* Firefox 19+ */
-  color: #A1887F; }
+  color: #CDBFBA; }
 
 .form-control:-ms-input-placeholder {
-  color: #A1887F; }
+  color: #CDBFBA; }
 
 .list-step {
   margin-top: 2em;
@@ -372,13 +372,13 @@ nav .container-fluid {
 
 .list-category, .list-tags {
   padding: 20px 0 0 0;
-  border-top: 1px solid #A1887F; }
+  border-top: 1px solid #CDBFBA; }
   .list-category li, .list-tags li {
     display: inline-block;
     margin: 0 14px 14px 0; }
     .list-category li a, .list-tags li a {
       text-decoration: none;
-      border: 1px solid #A1887F;
+      border: 1px solid #CDBFBA;
       font-size: .9em;
       padding: 3px 10px;
       border-radius: 2em;
@@ -398,7 +398,7 @@ nav .container-fluid {
   .ingredient-list .number {
     float: left;
     width: 100px;
-    color: #795548; }
+    color: #A2887E; }
   .ingredient-list .item {
     float: left;
     width: 50%; }
@@ -423,7 +423,7 @@ nav .container-fluid {
 h2.title {
   text-align: center;
   font-size: 1.1em;
-  color: #A1887F;
+  color: #CDBFBA;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -480,13 +480,13 @@ h2.title {
 .caption .date {
   margin-bottom: 5px;
   display: block;
-  color: #A1887F; }
+  color: #CDBFBA; }
 .caption h3 {
   margin-bottom: .5em;
   font-weight: 700;
   line-height: 1.3;
   font-size: 1.2em;
-  color: #795548; }
+  color: #A2887E; }
 
 .thumbnail {
   padding: 0;
@@ -526,17 +526,17 @@ h2.title {
       color: #FF5352; }
 .basics h3 {
   margin-top: 0;
-  color: #795548; }
+  color: #A2887E; }
 .basics h4, .basics .woocommerce div.product form.cart .variations td.label label, .woocommerce div.product form.cart .variations td.label .basics label {
   font-size: 1em;
   letter-spacing: 0;
-  color: #A1887F;
+  color: #CDBFBA;
   font-weight: 400; }
 .basics h2.title span {
   background: #F5F2F0 url("ui/ricepaper.png") top left; }
 
 .newsletter-box {
-  background: #3A96C1; }
+  background: #78B6D7; }
   .newsletter-box h2 {
     font-weight: 700;
     color: #3C2C29;
@@ -610,7 +610,7 @@ h2.title {
     .caption.first-post-caption p {
       font-size: 1.1em; } }
 .footer {
-  background: #795548; }
+  background: #A2887E; }
   .footer .footer-logo {
     margin-top: 5px; }
   .footer h3 {
@@ -722,11 +722,11 @@ h2.title {
       display: inline-block; }
       .post-wrapper header h1 a:hover,
       .product-wrapper header h1 a:hover {
-        color: #795548; }
+        color: #A2887E; }
   .post-wrapper header p, .post-wrapper header p a,
   .product-wrapper header p,
   .product-wrapper header p a {
-    color: #A1887F;
+    color: #CDBFBA;
     font-size: 1em;
     font-family: "Noto Serif", georgia, times, serif;
     font-style: italic;
@@ -753,10 +753,10 @@ h2.title {
       .product-wrapper header h4 a:hover,
       .product-wrapper header .woocommerce div.product form.cart .variations td.label label a:hover,
       .woocommerce div.product form.cart .variations td.label .product-wrapper header label a:hover {
-        color: #795548; }
+        color: #A2887E; }
 
 .post-wrapper header {
-  border-bottom: 1px solid #ccbfba;
+  border-bottom: 1px solid #f8f6f5;
   margin-bottom: 30px; }
 
 .comment-count {
@@ -775,11 +775,11 @@ h2.title {
   margin-bottom: 1em; }
   .sidenote h3 {
     font-size: 1.25em;
-    color: #A1887F;
+    color: #CDBFBA;
     font-weight: 400; }
   .sidenote p {
     font-family: "Lato", helvetica, verdana, sans-serif;
-    color: #A1887F;
+    color: #CDBFBA;
     line-height: 1.5; }
 
 .post-box .thumbnail {
@@ -797,7 +797,7 @@ h2.title {
 
 .date {
   font-size: .9em;
-  color: #795548; }
+  color: #A2887E; }
 
 figure.width-300 {
   max-width: 300px;
@@ -881,7 +881,7 @@ figure.width-500 {
     display: inline;
     margin-right: 10px; }
     .post-tags li a, .category-list li a {
-      border: 1px solid #A1887F;
+      border: 1px solid #CDBFBA;
       border-radius: 2em;
       display: inline-block;
       padding: 0 10px;
@@ -932,7 +932,7 @@ figure.width-500 {
   border-radius: 2em;
   width: 40px;
   height: 40px;
-  border: 1px solid #A1887F; }
+  border: 1px solid #CDBFBA; }
 
 .comment-author {
   font-size: 2rem;
@@ -943,7 +943,7 @@ figure.width-500 {
   border-bottom: 1px solid #ccc; }
 
 .comment-parent-count {
-  color: #A1887F;
+  color: #CDBFBA;
   font-size: 1em;
   font-weight: normal;
   position: absolute;
@@ -955,7 +955,7 @@ figure.width-500 {
     font-size: .8em; }
 
 .comment-meta a {
-  color: #A1887F;
+  color: #CDBFBA;
   font-size: .8em;
   font-weight: normal;
   text-transform: uppercase;
@@ -979,7 +979,7 @@ figure.width-500 {
   .comment-respond textarea, .comment-respond input[type='text'] {
     width: 100%;
     border-radius: 4px;
-    border: 1px solid #ccbfba;
+    border: 1px solid #f8f6f5;
     font-family: "Lato", helvetica, verdana, sans-serif;
     padding: .25em 10px; }
   .comment-respond .submit {
@@ -1020,7 +1020,7 @@ figure.width-500 {
     .page_nav .page-numbers:first-child {
       margin-left: 0; }
   .page_nav .dots {
-    color: #A1887F;
+    color: #CDBFBA;
     background: transparent;
     border: 0;
     width: 20px;
@@ -1029,7 +1029,7 @@ figure.width-500 {
     text-align: center; }
   .page_nav .current {
     background: none;
-    color: #A1887F; }
+    color: #CDBFBA; }
   .page_nav a:hover {
     background: #FF5352;
     color: white;
@@ -1204,7 +1204,7 @@ figure.width-500 {
     padding-right: 15px; } }
 .newsletter {
   margin-bottom: 30px;
-  background-image: repeating-linear-gradient(135deg, #ff8685 0px, #ff8685 30px, transparent 30px, transparent 50px, #3A96C1 50px, #3A96C1 80px, transparent 80px, transparent 100px);
+  background-image: repeating-linear-gradient(135deg, #ff8685 0px, #ff8685 30px, transparent 30px, transparent 50px, #78B6D7 50px, #78B6D7 80px, transparent 80px, transparent 100px);
   padding: 10px;
   text-align: center; }
   .newsletter .inner {
@@ -1269,7 +1269,7 @@ figure.width-500 {
   margin-top: 2.2em;
   padding-left: 0; }
   .archive .shop-sidebar .menu-title {
-    background: #A1887F;
+    background: #CDBFBA;
     padding: 0 0	0 20px;
     line-height: 50px;
     text-transform: uppercase;
@@ -1301,13 +1301,13 @@ figure.width-500 {
           font-weight: 400;
           padding: 8px 0 8px 30px; }
           .archive .shop-sidebar ul > li.sub-level a.selected {
-            color: #FF5252; }
+            color: #FF5352; }
         .archive .shop-sidebar ul > li.sub-level:first-child a {
           padding-top: 20px; }
         .archive .shop-sidebar ul > li.sub-level:last-child a {
           padding-bottom: 20px; }
     .archive .shop-sidebar ul a {
-      color: #A1887F;
+      color: #CDBFBA;
       display: block; }
       .archive .shop-sidebar ul a:hover {
         color: #FF5352; }
@@ -1329,12 +1329,12 @@ figure.width-500 {
     position: absolute;
     left: 18px;
     top: 30%;
-    color: #A1887F;
+    color: #CDBFBA;
     font-size: 18px;
     z-index: 10; }
 
 .product-search-results .entry a span.title {
-  color: #A1887F; }
+  color: #CDBFBA; }
 
 .product-image .thumbnail {
   margin-bottom: 0; }
@@ -1347,11 +1347,11 @@ figure.width-500 {
   padding-right: 15px; }
 
 .woocommerce-ordering select {
-  border: 1px solid #A1887F;
+  border: 1px solid #CDBFBA;
   background: white;
   height: 30px;
   font-size: 14px;
-  color: #A1887F; }
+  color: #CDBFBA; }
 
 .woo-store header {
   position: relative;
@@ -1368,7 +1368,7 @@ figure.width-500 {
     float: right;
     display: block;
     font-size: .9em;
-    color: #A1887F; }
+    color: #CDBFBA; }
 
 .woocommerce .woocommerce-info,
 .woocommerce .woocommerce-message,
@@ -1398,7 +1398,7 @@ figure.width-500 {
     font-family: "Lato", helvetica, verdana, sans-serif;
     margin-bottom: 20px; }
     .woocommerce .summary .price ins, .woocommerce .summary .price del {
-      color: #A1887F;
+      color: #CDBFBA;
       text-decoration: none; }
   .woocommerce .summary span.amount {
     font-size: 32px;
@@ -1415,14 +1415,14 @@ figure.width-500 {
   display: block;
   margin: 5px 0 10px; }
 .woocommerce table span.amount {
-  color: #A1887F;
+  color: #CDBFBA;
   font-weight: 700; }
 .woocommerce form.cart .input-text {
   max-width: 70px;
   height: 44px;
   border-radius: 3px;
   font-size: 20px;
-  color: #A1887F;
+  color: #CDBFBA;
   font-weight: 600;
   border: 1px solid #ccc;
   text-align: center; }
@@ -1453,7 +1453,7 @@ figure.width-500 {
   .woocommerce ul.products li.product a:first-of-type {
     display: block;
     overflow: hidden;
-    color: #795548; }
+    color: #A2887E; }
   .woocommerce ul.products li.product img {
     width: 100%;
     margin-bottom: .5em; }
@@ -1472,7 +1472,7 @@ figure.width-500 {
     text-align: center;
     width: 100%;
     display: inline-block;
-    color: #A1887F !important; }
+    color: #CDBFBA !important; }
     .woocommerce ul.products .price del {
       display: none; }
     .woocommerce ul.products .price ins {
@@ -1560,13 +1560,13 @@ figure.width-500 {
     overflow: hidden;
     width: 100%;
     max-width: 320px;
-    border: 1px solid #A1887F;
+    border: 1px solid #CDBFBA;
     position: relative; }
     .woocommerce div.product form.cart .variations .select-wrap .fa-angle-down {
       position: absolute;
       top: 22%;
       right: 12px;
-      color: #A1887F;
+      color: #CDBFBA;
       z-index: 0;
       font-size: 24px; }
     .woocommerce div.product form.cart .variations .select-wrap select {
@@ -1576,7 +1576,7 @@ figure.width-500 {
       -webkit-appearance: none;
       outline: none;
       background: transparent;
-      color: #795548;
+      color: #A2887E;
       border: 0;
       position: relative;
       z-index: 1; }
@@ -1602,7 +1602,7 @@ p.stock.in-stock {
   .dimension-box p {
     font-family: "Lato", helvetica, verdana, sans-serif;
     font-size: 1.2em;
-    color: #A1887F;
+    color: #CDBFBA;
     margin-bottom: 0; }
 
 .entry-summary ul {
@@ -1619,7 +1619,7 @@ p.stock.in-stock {
   padding-left: .5em; }
   .woocommerce div.product .woocommerce-tabs ul.tabs li {
     background-color: #F5F2F0;
-    border: 1px solid #ccbfba;
+    border: 1px solid #f8f6f5;
     border-radius: 3px 3px 0 0;
     margin: 0;
     padding: 0 1em; }
@@ -1628,17 +1628,17 @@ p.stock.in-stock {
       text-transform: uppercase;
       font-size: 11px;
       letter-spacing: 1.5px;
-      color: #A1887F !important; }
+      color: #CDBFBA !important; }
       .woocommerce div.product .woocommerce-tabs ul.tabs li a:hover {
-        color: #795548 !important; }
+        color: #A2887E !important; }
   .woocommerce div.product .woocommerce-tabs ul.tabs:before {
-    border-color: #ccbfba; }
+    border-color: #f8f6f5; }
 
 .woocommerce div.product .woocommerce-tabs ul.tabs li.active {
   background-color: white;
-  border: 1px solid #ccbfba;
+  border: 1px solid #f8f6f5;
   border-bottom-color: white;
-  color: #795548 !important; }
+  color: #A2887E !important; }
 
 .woocommerce div.product .woocommerce-tabs ul.tabs li:after,
 .woocommerce div.product .woocommerce-tabs ul.tabs li:before {
@@ -1649,7 +1649,7 @@ div.woocommerce-tabs ul.tabs li.additional_information_tab {
 
 .related-products h2 {
   margin-top: 1em;
-  border-bottom: 1px solid #A1887F;
+  border-bottom: 1px solid #CDBFBA;
   padding-bottom: 20px; }
 
 .related-block {
@@ -1662,7 +1662,7 @@ div.woocommerce-tabs ul.tabs li.additional_information_tab {
     position: absolute;
     bottom: -5px;
     left: 0;
-    color: #A1887F;
+    color: #CDBFBA;
     font-size: .8em;
     letter-spacing: .5px; }
 
@@ -1720,7 +1720,7 @@ p.demo_store {
     padding-left: 10px; }
     .woocommerce-cart .shop_table .product-remove a {
       display: inline-block;
-      background: #A1887F;
+      background: #CDBFBA;
       color: white !important;
       width: 14px;
       height: 14px;
@@ -1746,7 +1746,7 @@ p.demo_store {
     float: left; }
     .woocommerce-cart .shop_table .coupon label {
       font-family: "Lato", helvetica, verdana, sans-serif;
-      color: #A1887F;
+      color: #CDBFBA;
       font-weight: 700;
       display: none; }
     .woocommerce-cart .shop_table .coupon .input-text {
@@ -1760,11 +1760,11 @@ p.demo_store {
       float: left;
       margin: 0;
       border-color: #EFEBE9;
-      color: #A1887F; }
+      color: #CDBFBA; }
       .woocommerce-cart .shop_table .coupon input[type="submit"]:hover {
-        color: #795548;
+        color: #A2887E;
         background: white;
-        border-color: #A1887F; }
+        border-color: #CDBFBA; }
   .woocommerce-cart .shop_table .actions {
     padding-top: 40px;
     padding-bottom: 0; }
@@ -1846,7 +1846,7 @@ p.demo_store {
   background: #FF5352 !important;
   border: none; }
   .woocommerce-checkout input#place_order:hover {
-    background: #1c8fcd !important; }
+    background: #1C8FCD !important; }
 
 .woocommerce ul#shipping_method li .amount {
   display: inherit; }
@@ -1943,8 +1943,8 @@ p.demo_store {
   height: 50px;
   font-size: 14px; }
   .woocommerce-cart .wc-proceed-to-checkout a.checkout-button:hover {
-    background: #1c8fcd !important;
-    border-color: #1c8fcd !important; }
+    background: #1C8FCD !important;
+    border-color: #1C8FCD !important; }
 
 .archive.woocommerce .btn-more, .archive.woocommerce .post-box .thumbnail .more-link, .post-box .thumbnail .archive.woocommerce .more-link, .single-product.woocommerce .btn-more, .single-product.woocommerce .post-box .thumbnail .more-link, .post-box .thumbnail .single-product.woocommerce .more-link {
   display: none !important; }
@@ -2085,7 +2085,7 @@ p.demo_store {
     content: "Advertisement";
     position: relative;
     top: -5px;
-    color: #A1887F;
+    color: #CDBFBA;
     font-size: .8em;
     letter-spacing: .5px; }
 
@@ -2097,7 +2097,7 @@ p.demo_store {
     content: "Advertisement";
     position: relative;
     bottom: 0;
-    color: #A1887F;
+    color: #CDBFBA;
     font-size: .8em;
     letter-spacing: .5px; }
 
@@ -2115,7 +2115,7 @@ p.demo_store {
       content: "Advertisement";
       position: relative;
       top: -5px;
-      color: #A1887F;
+      color: #CDBFBA;
       font-size: .8em;
       letter-spacing: .5px; }
 
@@ -2127,6 +2127,6 @@ p.demo_store {
       content: "Advertisement";
       position: relative;
       top: -5px;
-      color: #A1887F;
+      color: #CDBFBA;
       font-size: .8em;
       letter-spacing: .5px; } }
