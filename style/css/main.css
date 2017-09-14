@@ -64,7 +64,6 @@ p {
   h1 {
     font-size: 2.3em; } }
 body {
-  background: white url("ui/ricepaper.png") top left;
   background-size: 240px auto; }
 
 .content-box {
@@ -91,19 +90,23 @@ figure {
   padding: 5px 0 !important;
   margin-bottom: 0;
   text-align: right; }
+  .nav-social:before {
+    content: "Follow";
+    color: white;
+    font-weight: 700; }
   .nav-social li {
     display: inline-block;
     position: relative;
-    margin-right: 10px;
-    margin-left: 10px; }
+    margin-right: 5px;
+    margin-left: 5px; }
   .nav-social a {
     display: inline-block;
     color: white !important;
     border-radius: 2rem;
-    width: 32px;
-    height: 32px;
+    width: 30px;
+    height: 30px;
     line-height: 32px !important;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     padding: 0 !important; }
     .nav-social a:hover {
@@ -137,7 +140,8 @@ figure {
     background: url("ui/ss-logo.svg") no-repeat top left;
     background-size: 100% auto; }
   .brand-box p {
-    font-family: "Lato", helvetica, verdana, sans-serif; }
+    font-family: "Lato", helvetica, verdana, sans-serif;
+    color: #A2887E; }
   .brand-box .search-box {
     -webkit-flex: 1 0 0;
     flex: 1 0 0;
@@ -146,7 +150,8 @@ figure {
     .brand-box .search-box i.fa-search {
       position: absolute;
       top: 15px;
-      right: 10px; }
+      right: 10px;
+      color: #A2887E; }
 
 nav .container-fluid {
   max-width: 1200px;
@@ -161,8 +166,8 @@ nav .container-fluid {
   margin-top: 0;
   margin-bottom: 0;
   width: 100%;
-  border-top: 1px solid #5D4037;
-  border-bottom: 1px solid #5D4037; }
+  border-top: 1px solid #CDBFBA;
+  border-bottom: 1px solid #CDBFBA; }
 
 .navbar-inverse .navbar-toggle {
   border-color: #78B6D7; }
@@ -173,7 +178,7 @@ nav .container-fluid {
   border-color: #1C8FCD; }
 
 .navbar-inverse .navbar-nav > li > a {
-  color: #5D4037;
+  color: #A2887E;
   font-weight: 700;
   text-transform: uppercase;
   -webkit-transition: color .2s;
@@ -300,6 +305,12 @@ nav .container-fluid {
     color: white;
     text-decoration: none; }
 
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none; }
+
 .form-inline {
   position: relative; }
   .form-inline .form-group {
@@ -308,9 +319,9 @@ nav .container-fluid {
     width: 100%;
     height: 44px;
     border-radius: 3px;
-    border-color: #f8f6f5;
+    border-color: #CDBFBA;
     font-size: 16px;
-    color: #CDBFBA;
+    color: #A2887E;
     font-weight: 700; }
   .form-inline button {
     position: absolute;
