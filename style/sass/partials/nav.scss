@@ -38,9 +38,11 @@
 }
 
 .brand-box {
+	margin-top: 40px;
 	margin-bottom: 0 !important;
 	padding-bottom: 0 !important;
 	.row {
+		margin: 0;
 		display: -webkit-flex;
 		display: flex;
 		-webkit-flex-direction: row; /* works with row or column */
@@ -58,27 +60,31 @@
 		display: inline-block;
 		text-indent: -100%;
 		overflow: hidden;
-		width: 306px;
-		height: 74px;
-		margin: 38px 0 10px;
-		background: url('ui/ss-logo.svg') no-repeat top left;
-		background-size: 100% auto;
+		width: 100%;
+		height: 50px;
+		margin: 20px auto 10px;
+		background: url('ui/ss-logo.svg') no-repeat center center;
+		background-size: auto 100%;
 	}
 	p {
 		font-family: $font-sans;
 		color: $chocolate;
+		text-align: center;
 	}
 	.search-box {
+		display: none;
 		-webkit-flex: 1 0 0;
 		flex: 1 0 0;
-		margin-top: 40px;
-		position: relative;
-		i.fa-search {
-			position: absolute;
-			top: 15px;
-			right: 10px;
-			color: $chocolate;
-		}
+	}
+}
+
+.search-box {
+	position: relative;
+	i.fa-search {
+		position: absolute;
+		top: 15px;
+		right: 10px;
+		color: $chocolate;
 	}
 }
 
@@ -88,17 +94,18 @@ nav .container-fluid {
 }
 
 .navbar {
-	background: none;
+	background: $blue;
 	margin-bottom: 0;
 	border: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
 }
 
 .navbar-nav {
 	margin-top: 0;
 	margin-bottom: 0;
 	width: 100%;
-	border-top: 1px solid $choco;
-	border-bottom: 1px solid $choco;
 }
 
 .navbar-inverse .navbar-toggle {
@@ -112,29 +119,115 @@ nav .container-fluid {
 	border-color: $blue-dark;
 }
 
+.navbar-collapse {
+	border: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	.search-box {
+		padding: 0;
+		input {
+			margin: 0;
+			background-color: $blue;
+			border-color: $blue-lite;
+			color: white;
+			&::-webkit-input-placeholder {
+			  color: $blue-lite; }
+
+			&:-moz-placeholder {
+			  /* Firefox 18- */
+			  color: $blue-lite; }
+
+			&::-moz-placeholder {
+			  /* Firefox 19+ */
+			  color: $blue-lite; }
+
+			&:-ms-input-placeholder {
+			  color: $blue-lite; }
+		}
+		i {
+			color: $blue-lite;
+		}
+	}
+	.navbar-nav {
+		text-align: center;
+		height: 100vh;
+		margin: 0;
+		li {
+			border-bottom: 1px solid $blue-lite;
+		}
+	}
+}
+
 .navbar-inverse .navbar-nav>li>a {
-	color: $chocolate;
+	color: white;
 	font-weight: $semi-bold;
 	text-transform: uppercase;
+	padding-top: 15px;
+	padding-bottom: 15px;
 	-webkit-transition: color .2s;
     transition: color .2s;
     letter-spacing: .25px;
 	&:hover {
-		color: $blue;
+		color: $chocolate-text;
 	}
 }
 
 .navbar-inverse .navbar-nav>li.current_page_item a {
 	font-weight: $bold;
 }
+
+.navbar-toggle {
+	float: none;
+	border: none;
+	color: white;
+	font-weight: $semi-bold;
+}
+
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+	background: none;
+}
+
 @media (min-width: 768px) {
+	.navbar {
+		background: none;
+		position: relative;
+	}
 	.nav-social {
 		display: block;
 	}
-	.navbar-nav>li>a {
+	.navbar-inverse .navbar-nav>li>a {
 		padding: 15px 20px;
+		color: $chocolate;
 		&:hover {
 		color: $blue;
+		}
+	}
+	.navbar-collapse {
+		.navbar-nav {
+			text-align: left;
+			height: auto;
+			border-top: 1px solid $choco;
+			border-bottom: 1px solid $choco;
+		}
+		.search-box {
+			display: none;
+		}
+	}
+	.brand-box {
+		.row {
+			margin-right: -15px;
+	    margin-left: -15px;
+		}
+		.logo {
+			width: 306px;
+			height: 74px;
+			margin: 10px 0 10px;
+		}
+		p {
+			text-align: left;
+		}
+		.search-box {
+			display: block;
 		}
 	}
 }
