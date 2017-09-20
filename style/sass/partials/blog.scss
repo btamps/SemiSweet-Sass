@@ -15,6 +15,20 @@
 	padding: 30px;
 }
 
+.feed {
+	@include flexbox();
+	@include align-items(flex-start);
+	@include flex-wrap(wrap);
+	height: 100%;
+	padding: 0 10px;
+	article {
+		width: 48%;
+		&:nth-child(odd) {
+			margin-right: 3%;
+		}
+	}
+}
+
 .post-wrapper {
 	@extend .box-wrapper;
 	padding: 0 15px 15px;
@@ -64,7 +78,7 @@
 		}
 	}
 	p, p a {
-		color: $choco;
+		color: $chocolate;
 		font-size: 1em;
 		font-family: $font-serif;
 		font-style: italic;
@@ -126,16 +140,21 @@
 	}
 }
 
-.post-box .thumbnail {
-	@extend .wrapper-bg;
+.post-box {
 	padding: 0;
-	.more-link {
-		@extend .btn;
-		@extend .btn-more;
-    display: block;
-    margin: 2em auto 0 !important;
-    width: 180px;
-    text-align: center;
+	.thumbnail {
+		@extend .wrapper-bg;
+		padding: 0;
+		.caption {
+			padding: 15px;
+			h2 {
+				font-size: 1em;
+				margin-bottom: 0;
+				a {
+					font-weight: $semi-bold;
+				}
+			}
+		}
 	}
 }
 
@@ -145,10 +164,9 @@
 	margin-right: 15px;
 }
 
-
 .date {
-	font-size: .9em;
-	color: $chocolate;
+	font-size: .85em;
+	color: $chocolate-text;
 }
 
 figure {
@@ -204,7 +222,7 @@ figure {
 	}
 
 	h2 {
-		margin: 1em 0;
+		margin: 0 0 1em 0;
 	}
 }
 
@@ -493,12 +511,6 @@ figure {
 	padding-top: 0;
 }
 
-.post-box {
-	.thumbnail .caption {
-		padding: 30px 20px;
-	}
-}
-
 // Recent Blog Posts Box
 .recent-blog-box {
 	background: white;
@@ -574,6 +586,23 @@ figure {
 	.content-wrapper {
 		margin-top: 2.5em;
 	}
+
+	.feed {
+		padding: 0;
+	}
+
+	.post-box {
+		padding: 0;
+		.thumbnail {
+			.caption {
+				padding: 20px;
+				h2 {
+					font-size: 1.2em;
+				}
+			}
+		}
+	}
+
 	.blog .content-box {
 		padding-top: 0;
 		padding-left: 30px;
@@ -597,21 +626,6 @@ figure {
 	.archive.woocommerce.tag .content-wrapper {
 		padding-right: 45px;
 		padding-left: 15px;
-	}
-
-	.home .content-wrapper .feature-image,
-	.page-template-archive .content-wrapper .feature-image,
-	.search .content-wrapper .feature-image {
-		height: 300px;
-		overflow: hidden;
-		text-align: center;
-		img {
-			position: relative;
-			left: 100%;
-			margin-left: -200%;
-			top: 100%;
-			margin-top: -60%;
-		}
 	}
 
 	.product-wrapper {
@@ -657,16 +671,6 @@ figure {
 	.search {
 		.recent-result, .cat-result, .tag-result {
 			margin-left: 0;
-		}
-	}
-
-	.post-box {
-		padding: 0;
-		.thumbnail .caption {
-			padding: 40px 50px 30px;
-			h2 {
-				font-size: 2em;
-			}
 		}
 	}
 
