@@ -45,18 +45,13 @@ $menu-height: 50px;
 	padding-bottom: 0 !important;
 	.row {
 		margin: 0;
-		display: -webkit-flex;
-		display: flex;
-		-webkit-flex-direction: row; /* works with row or column */
-		flex-direction: row;
-		-webkit-align-items: center;
-		align-items: center;
-		-webkit-justify-content: center;
-		justify-content: center;
+		@include flexbox();
+		@include flex-direction(row);
+		@include align-items(center);
+		@include justify-content(center);
 	}
 	.branding {
-		-webkit-flex: 2 0 0;
-		flex: 2 0 0;
+		@include flex(2 0 0);
 	}
 	.logo {
 		display: inline-block;
@@ -76,8 +71,7 @@ $menu-height: 50px;
 	}
 	.search-box {
 		display: none;
-		-webkit-flex: 1 0 0;
-		flex: 1 0 0;
+		@include flex(1 0 0);
 	}
 }
 
@@ -204,8 +198,6 @@ nav .container-fluid {
 		}
 	}
 	.navbar-collapse {
-		margin-left: 30px !important;
-		margin-right: 30px !important;
 		max-width: 1140px;
 		.navbar-nav {
 			text-align: left;
@@ -223,6 +215,9 @@ nav .container-fluid {
 	.navbar-collapse .navbar-nav li.current_page_item {
 		height: $menu-height;
 		border-bottom: 4px solid $blue;
+		a {
+			color: $blue;
+		}
 	}
 	.brand-box {
 		margin-top: 30px;
@@ -245,6 +240,10 @@ nav .container-fluid {
 }
 
 @media (min-width: 1190px) {
+	.navbar-collapse {
+		margin-left: 30px !important;
+		margin-right: 30px !important;
+	}
 	.navbar {
 		.container-fluid {
 			padding: 0;
