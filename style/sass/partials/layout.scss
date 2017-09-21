@@ -1,5 +1,6 @@
 body {
 	background-size: 240px auto;
+	margin-top: 50px;
 }
 
 .content-box {
@@ -22,6 +23,9 @@ figure {
 }
 
 @media (min-width: 767px) {
+	body {
+		margin-top: 0;
+	}
 	.container-fluid {
 		// padding-left: 40px;
 		// padding-right: 40px;
