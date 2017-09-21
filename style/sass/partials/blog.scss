@@ -232,35 +232,6 @@ figure {
 		margin-left: 20px;
 	}
 }
-.page-template-archive {
-	.archive-list, .archive-list ul {
-		padding: 0;
-		list-style: none;
-		li {
-			margin-bottom: .5em;
-			font-size: 16px;
-			h3 {
-				margin-bottom: 0;
-				font-weight: $regular;
-				color: $chocolate-text;
-			}
-		}
-		ul.posts {
-			list-style: initial !important;
-			padding-left: 1.25em !important;
-		}
-	}
-	.archive-list {
-		& > li {
-			margin-bottom: 2em;
-		}
-		.months li h3 {
-			margin-bottom: 1em;
-			font-weight: $bold;
-			font-size: 16px;
-		}
-	}
-}
 
 .page-template-archive, .search-results {
 	.cat-result, .tag-result {
@@ -313,18 +284,35 @@ figure {
 
 .archive-search-box {
 	@extend .box-wrapper;
-	padding-top: 1.5em;
-	margin-bottom: 2em;
-	h1 {
-		margin: 0 0 .45em;
+	padding: 1.5em 10px 1.25em;
+	margin: 0 15px 2em;
+	h2 {
+		margin: 0 0 1em 0;
+		font-size: 1em;
 	}
-	.search-form {
-		position: relative;
-		label {
-			position: absolute;
-			top: 10px;
-			left: 15px;
-			font-size: 1.1em;
+	.list-tags {
+		border: 0;
+		padding: 0 0 0 20px;
+		margin-bottom: 0;
+		margin-right: -10px;
+		@include flexbox();
+		@include flex-wrap(wrap);
+		li {
+			display: list-item;
+			@include flex(1 0 28%);
+			margin-bottom: 10px;
+			color: $blue;
+			a {
+				display: block;
+				padding: 0;
+				border-radius: 0;
+				border: 0;
+				color: $chocolate-text;
+				font-size: .8em;
+				&:hover {
+					color: $red;
+				}
+			}
 		}
 	}
 }
@@ -696,6 +684,21 @@ figure {
 		margin-left: 0;
 		margin-right: 0;
 	}
+
+	.archive-search-box {
+		padding: 1.5em 15px 1.25em;
+		margin: 0 0 2em;
+		h2 {
+			font-size: 1.2em;
+		}
+		.list-tags {
+			margin-right: -15px;
+			li {
+				@include flex(1 0 20%);
+				max-width: 23%;
+			}
+		}
+	}
 }
 
 @media (min-width: 991px) {
@@ -710,6 +713,23 @@ figure {
 	}
 	.product-wrapper {
 		max-width: none;
+	}
+
+	.page-template-archive {
+		.feed {
+			margin: 0 -15px;
+			article {
+				width: 31%;
+				&:nth-child(odd) {
+					margin-right:0;
+				}
+
+				&:nth-child(3n+2) {
+					margin-left: 22px;
+					margin-right: 22px;
+				}
+			}
+		}
 	}
 
 }
