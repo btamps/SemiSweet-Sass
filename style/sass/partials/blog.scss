@@ -436,38 +436,56 @@ figure {
 	}
 }
 
-.pagination-wrapper {
-	overflow: hidden;
+.pagination-row {
+	text-align: center;
 }
-.page_nav {
+
+.pagination-nav {
+	@extend .box-wrapper;
 	text-align: center;
 	margin: 0 auto;
-	display: block;
-	position: relative;
-	left: 50%;
-	float: left;
-	a, span {
-		float: left;
-		background: white;
-		padding: 6px 12px;
-		margin-left: 10px;
-		border: 1px solid $gray;
-		text-decoration: none;
-		line-height: 1.4;
-		&.prev, &.next {
-			display: block;
-			font-family: FontAwesome;
-		}
+	padding: 7px 10px;
+	border-radius: 2em;
+	display: inline-block;
+	a:hover {
+		background-color: $red;
+		color: white;
 	}
-	.page-numbers {
-		display: block;
-		position: relative;
-		float: left;
-		right: 50%;
-
+	a, span {
+		display: inline-block;
+		text-decoration: none;
+		border-radius: 2em;
+		width: 26px;
+		height: 26px;
+		line-height: 26px;
+		color: $chocolate;
+		margin: 0 6px;
 		&:first-child {
 			margin-left: 0;
 		}
+	}
+
+	a.prev, a.next {
+		width: auto;
+	}
+	a.prev, a.next {
+		text-indent: -200%;
+		overflow: hidden;
+		width: 13px;
+		height: 20px;
+		margin: 0 6px -4px 6px;
+		&:hover {
+			background-color: white;
+			color: $red;
+		}
+	}
+	a.prev {
+		padding-left: 22px;
+		background: url(ui/arrow-prev.svg) no-repeat left center;
+	}
+	a.next {
+		padding-right: 22px;
+		background: url(ui/arrow-next.svg) no-repeat right center;
 	}
 	.dots {
 		color: $choco;
@@ -479,13 +497,8 @@ figure {
 		text-align: center;
 	}
 	.current {
-		background: none;
-		color: $choco;
-	}
-	a:hover {
-		background: $red;
+		background: $choco;
 		color: white;
-		border-color: $red;
 	}
 }
 
