@@ -2371,3 +2371,13 @@ p.demo_store {
       color: #CDBFBA;
       font-size: .8em;
       letter-spacing: .5px; } }
+.page-template-page-contact .post-wrapper {
+  padding: 80px 40px 40px;
+  background: url(ui/newsletter-stamp.png) no-repeat 99% 20px;
+  background-color: #F5F2F0;
+  background-size: 150px auto; }
+
+@media (min-width: 767px) {
+  .page-template-page-contact .post-wrapper {
+    padding: 90px 40px 40px;
+    background-size: 200px auto; } }
