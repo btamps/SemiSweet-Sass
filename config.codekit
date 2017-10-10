@@ -229,6 +229,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/style\/css\/ui\/stay-in-the-mix-objects.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7537,
+		"inputAbbreviatedPath": "\/style\/css\/ui\/stay-in-the-mix-objects.png",
+		"outputAbbreviatedPath": "\/style\/css\/ui\/stay-in-the-mix-objects.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/style\/sass\/css\/blog.css": {
 		"fileType": 16,
 		"ignore": 1,

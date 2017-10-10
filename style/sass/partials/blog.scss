@@ -122,20 +122,20 @@
 }
 
 .sidenote {
-	border: 1px solid $cream-dark;
+	border: 1px solid $chocolate;
 	padding: 0 20px;
 	border-radius: 6px;
 	margin-bottom: 1em;
 
 	h3 {
 		font-size: 1.25em;
-		color: $choco;
+		color: $chocolate;
 		font-weight: $regular;
 	}
 
 	p {
 		font-family: $font-sans;
-		color: $choco;
+		color: $chocolate;
 		line-height: 1.5;
 	}
 }
@@ -144,6 +144,7 @@
 	padding: 0;
 	.thumbnail {
 		@extend .wrapper-bg;
+		border-radius: 4px;
 		padding: 0;
 		.caption {
 			padding: 15px;

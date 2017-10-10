@@ -1,28 +1,66 @@
 // Sidebar Styles
 .newsletter {
 	margin-bottom: 30px;
-	background-image: repeating-linear-gradient(135deg, lighten( $red, 10%) 0px, lighten( $red, 10%) 30px, transparent 30px, transparent 50px, $blue 50px, $blue 80px, transparent 80px, transparent 100px);
-	padding: 10px;
-	.inner {
-		background: white;
-		width: 100%;
-		height: 100%;
-		padding: 30px;
-	}
+	background: $blue-lite;
+	padding: 24px;
 	text-align: center;
+	border-radius: 4px;
+	img {
+		width: 100%;
+		max-width: 273px;
+	}
+	h2 {
+		text-indent: -200%;
+		margin: 15px auto 2px;
+		width: 200px;
+		height: 40px;
+		overflow: hidden;
+		background: url(ui/stay-in-the-mix-title.svg) no-repeat top left;
+	}
 	h3 {
-		color: $chocolate-text;
+		color: $chocolate;
 		font-weight: $semi-bold;
 		margin-top: 0;
+		font-size: 16px;
+		letter-spacing: 1px;
+		text-transform: uppercase;
 	}
-	h4 {
-		font-size: 1em;
+	p {
+		font-size: 18px;
+		line-height: 1.5;
+		font-family: $font-sans;
 		text-transform: none;
-		letter-spacing: 0;
 		font-weight: $regular;
-		margin-bottom: 20px;
+		margin: 0 auto 20px;
+		color: $gray-dark;
+		max-width: 280px;
 	}
+	input.email {
+		position: relative;
+		border-color: $blue;
+		color: $blue;
+		&::-webkit-input-placeholder {
+		   color: $gray;
+		}
 
+		&:-moz-placeholder { /* Firefox 18- */
+		   color: $gray;
+		}
+
+		&::-moz-placeholder {  /* Firefox 19+ */
+		   color: $gray;
+		}
+
+		&:-ms-input-placeholder {
+		   color: $gray;
+		}
+	}
+	.form-inline button {
+		background: none;
+		color: $blue;
+		font-size: 24px;
+		padding: 0;
+	}
 }
 
 .sidebar-post-box {
