@@ -84,6 +84,10 @@ button:focus {
 	}
 }
 
+.form-group-lg .form-control {
+	border-radius: 3px;
+}
+
 .form-control::-webkit-input-placeholder {
    color: $choco;
 }
