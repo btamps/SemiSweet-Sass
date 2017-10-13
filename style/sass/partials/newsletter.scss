@@ -1,7 +1,73 @@
 .newsletter-box {
-	background: $blue-lite;
-}
+  background: $blue-lite;
+  padding: 40px 15px;
+	text-align: center;
+  .newsletter-icon {
+    max-width: 208px;
+    margin-bottom: 10px;
+  }
+  h3 {
+    text-indent: -200%;
+    background: url(ui/subscribe-to-the-newsletter.svg) top center no-repeat;
+    max-width: 335px;
+    margin: 10px auto 20px;
+		overflow: hidden;
+  }
+  p {
+    font-size: 1.15em;
+		line-height: 28px;
+		font-family: $font-sans;
+	  color: $blue-text-dark;
+  }
+  form {
+    max-width: 500px;
+    margin: 20px auto;
+    position: relative;
+    .email.form-control {
+      background: white;
+      border-color: $blue-bg-medium;
+      border-radius: 3px;
+      padding: 8px 10px;
+      color: $blue-text-dark;
+      & {
+    		&::-webkit-input-placeholder {
+    		  color: $blue-bg-medium; }
 
+    		&:-moz-placeholder {
+    		  /* Firefox 18- */
+    		  color: $blue-bg-medium; }
+
+    		&::-moz-placeholder {
+    		  /* Firefox 19+ */
+    		  color: $blue-bg-medium; }
+
+    		&:-ms-input-placeholder {
+    		  color: $blue-bg-medium; }
+      }
+    }
+    button {
+      position: absolute;
+      right: 0;
+      top: 0;
+      color: $blue-bg-dark;
+      background: transparent;
+      font-size: 24px;
+      padding: 0;
+			i {
+				position: relative;
+				left: 8px;
+			}
+      &:hover {
+        background-color: transparent;
+        color: $blue-bg-medium;
+      }
+    }
+		button:focus,.email.form-control:focus {
+			outline: none;
+			color: $blue-bg-dark;
+		}
+  }
+}
 
 @media (min-width: 480px) {
 
