@@ -1333,30 +1333,30 @@ figure.width-500 {
   .blog .content-box {
     padding-left: 15px;
     padding-right: 15px; } }
-.sidebar.newsletter {
+.sidebar .newsletter {
   margin-bottom: 30px;
   background: #eaf4f9;
   padding: 24px;
   text-align: center;
   border-radius: 4px; }
-  .sidebar.newsletter img {
+  .sidebar .newsletter img {
     width: 100%;
     max-width: 273px; }
-  .sidebar.newsletter h2 {
+  .sidebar .newsletter h2 {
     text-indent: -200%;
     margin: 15px auto 2px;
     width: 200px;
     height: 40px;
     overflow: hidden;
     background: url(ui/stay-in-the-mix-title.svg) no-repeat top left; }
-  .sidebar.newsletter h3 {
+  .sidebar .newsletter h3 {
     color: #A2887E;
     font-weight: 700;
     margin-top: 0;
     font-size: 16px;
     letter-spacing: 1px;
     text-transform: uppercase; }
-  .sidebar.newsletter p {
+  .sidebar .newsletter p {
     font-size: 18px;
     line-height: 1.5;
     font-family: "Lato", helvetica, verdana, sans-serif;
@@ -1365,21 +1365,21 @@ figure.width-500 {
     margin: 0 auto 20px;
     color: #939598;
     max-width: 280px; }
-  .sidebar.newsletter input.email {
+  .sidebar .newsletter input.email {
     position: relative;
     border-color: #78B6D7;
     color: #78B6D7; }
-    .sidebar.newsletter input.email::-webkit-input-placeholder {
+    .sidebar .newsletter input.email::-webkit-input-placeholder {
       color: #ccc; }
-    .sidebar.newsletter input.email:-moz-placeholder {
+    .sidebar .newsletter input.email:-moz-placeholder {
       /* Firefox 18- */
       color: #ccc; }
-    .sidebar.newsletter input.email::-moz-placeholder {
+    .sidebar .newsletter input.email::-moz-placeholder {
       /* Firefox 19+ */
       color: #ccc; }
-    .sidebar.newsletter input.email:-ms-input-placeholder {
+    .sidebar .newsletter input.email:-ms-input-placeholder {
       color: #ccc; }
-  .sidebar.newsletter .form-inline button {
+  .sidebar .newsletter .form-inline button {
     background: none;
     color: #78B6D7;
     font-size: 24px;
