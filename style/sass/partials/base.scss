@@ -4,7 +4,7 @@ $regular: 400;
 $semi-bold: 700;
 $bold: 900;
 
-// New Colors
+// Colors
 $red: #FF5352;
 $red-dark: #F44336;
 $red-disabled: #FFCDD2;
@@ -37,9 +37,6 @@ $h1-weight: $bold;
 $h2-weight: $light;
 $h3-weight: $regular;
 $h4-weight: $semi-bold;
-
-// Mixins and Extends
-
 
 html {
 	-webkit-font-smoothing: antialiased;
