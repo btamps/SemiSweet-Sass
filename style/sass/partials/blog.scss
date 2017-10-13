@@ -513,34 +513,6 @@ figure {
 	padding-top: 0;
 }
 
-// Recent Blog Posts Box
-.recent-blog-box {
-	background: white;
-	.title {
-		span {
-			background: white;
-		}
-	}
-	.thumbnail {
-		@extend .wrapper-bg;
-		padding: 0;
-		&:hover {
-			box-shadow: 0 0 10px #ccc;
-			text-decoration: none;
-			h3, .date {
-				color: $red;
-			}
-		}
-		.caption {
-			padding: 15px;
-			text-align: center;
-			h3 {
-				margin-top: 0;
-			}
-		}
-	}
-}
-
 // Related Posts Plugin Styles
 .bawmrp {
 	margin: 0 15px;
@@ -659,6 +631,10 @@ figure {
 	.blog, .page-template-archive {
 		.content-box {
 			padding-top: 0;
+			.row {
+				margin-right: -15px;
+		    margin-left: -15px;
+			}
 		}
 	}
 

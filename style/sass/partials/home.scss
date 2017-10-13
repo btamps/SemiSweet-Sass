@@ -1,52 +1,58 @@
 // Home Styles
+.home .content-box {
+	margin-left: 15px;
+	margin-right: 15px;
+	padding: 0;
+}
+.home .container-fluid.content-box {
+	border-top: 1px solid $choco;
+}
 
-h2.title {
-	text-align: center;
-	font-size: 1.1em;
-	color: $choco;
-	font-weight: $regular;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	margin-bottom: 30px;
-	padding-left: 15px;
-	padding-right: 15px;
-	position: relative;
-	z-index: 1;
-
-	span {
-		background: $cream url('ui/ricepaper.png') top left;
-		padding-left: 20px;
-		padding-right: 20px;
-	}
-
-	&:before {
-		content: "";
+.hero-banner {
+	padding: 10px 0 30px !important;
+	border-top: 0 !important;
+	a {
 		display: block;
-		width: 100%;
-		height: 2px;
-		background: $cream-dark;
-		position: relative;
-		top: .5em;
-		z-index: -10;
+		img {
+			width: 100%;
+		}
 	}
 }
 
-.home .btn-more {
-	display: block;
-	width: 200px;
-	margin: 0 auto;
+.title-wrap {
+	position: relative;
+	overflow: hidden;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+	padding-bottom: 20px;
+	h2 {
+		font-weight: $regular;
+		margin-bottom: 10px;
+		font-size: 24px;
+	}
+
+	.btn-more {
+		text-align: left;
+		color: $chocolate;
+		&:hover {
+			background-color: transparent;
+			color: $red;
+		}
+	}
 }
+
 .home-recent-products {
 	list-style: none;
 	padding-left: 0;
 	padding-right: 0;
+	overflow: hidden;
 	li {
 		a {
-			@extend .wrapper-bg;
 			display: block;
 			padding: 0;
 			text-align: center;
-			margin-bottom: 40px;
+			margin-bottom: 10px;
 			.caption {
 				padding: 15px;
 				h3 {
@@ -59,9 +65,8 @@ h2.title {
 				}
 			}
 			&:hover {
-				box-shadow: 0 0 10px #ccc;
 				h3 {
-					color: $red;
+					color: $chocolate-dark;
 				}
 				text-decoration: none;
 			}
@@ -83,58 +88,39 @@ h2.title {
 		margin-bottom: .5em;
 		font-weight: $semi-bold;
 		line-height: 1.3;
-		font-size: 1.2em;
-		color: $chocolate;
+		font-size: 16px;
+		color: $chocolate-text;
 	}
 }
 
 .thumbnail {
 	padding: 0;
-	border-radius: 0;
 	border: 0;
-	margin-bottom: 40px;
 	.caption {
-		padding: 30px;
-	}
-}
-
-.blog-box {
-	background: white url('ui/ricepaper.png') top left;
-	padding-bottom: 40px;
-	.thumbnail {
-		box-shadow: 0 0 2px $gray;
-	}
-	h3 {
-		margin-top: 0;
-	}
-
-	.btn-block {
-		max-width: 250px;
-		margin: 10px auto;
-		display: block;
-		border: 1px solid $red;
-		&:hover {
-			background: $red-dark;
-			border-color: $red-dark;
-			color: white;
+		padding: 20px 0 0;
+		h3 {
+			margin-top: 10px;
 		}
 	}
-
+	&:hover {
+		text-decoration: none;
+		h3, .date {
+			color: $red;
+		}
+	}
 }
 
 .basics {
-
 	.caption {
 		text-align: center;
 		padding: 10px 20px;
 	}
 	.thumbnail {
-		@extend .wrapper-bg;
 		padding: 0;
 		margin-bottom: 30px;
+		margin-top: 10px;
 		&:hover {
 			text-decoration: none;
-			box-shadow: 0 0 10px $gray;
 			h3, h4 {
 				color: $red;
 			}
@@ -142,105 +128,51 @@ h2.title {
 	}
 	h3 {
 		margin-top: 0;
-		color: $chocolate;
+		color: $chocolate-text;
 	}
 	h4 {
 		font-size: 1em;
 		letter-spacing: 0;
-		color: $choco;
+		color: $chocolate;
 		font-weight: $regular;
 	}
-
-	h2.title {
-		span {
-			background: $cream url('ui/ricepaper.png') top left;
-		}
-	}
 }
-
-.newsletter-box {
-	background: $blue;
-	h2 {
-		font-weight: $semi-bold;
-		color: $chocolate-dark;
-		margin-bottom: .25em;
-		font-size: 1.75em;
-		i {
-			color: $blue-lite;
-		}
-	}
-	p {
-		font-family: $font-sans;
-		color: #eee;
-		font-size: 1.2em;
-	}
-	.newsletter-text {
-		margin: 0 auto 20px;
-		text-align: center;
-		float: none;
-	}
-
-	.form-inline .btn {
-		display: block;
-	    position: relative;
-	    margin: 0 auto;
-	    border-top-left-radius: 6px;
-	    border-bottom-left-radius: 6px;
-	    font-size: .9em;
-			border: 0;
-	}
-
-	.form-inline input {
-		border: 0;
-	}
-
-	.no-joke {
-		text-align: center;
-		font-size: .9em;
-		margin: 1em 0 3em;
-	}
-}
-
-
-
 
 @media (min-width: 767px) {
-	h2.title {
-	font-size: 1.4em;
-	margin-top: 40px !important;
-	margin-bottom: 40px !important;
+	.hero-banner {
+		padding: 40px 0 !important;
 	}
-
-	.basics .thumbnail {
-		height: auto;
-		margin-bottom: 20px;
-	}
-
-	.newsletter-box .form-inline .btn {
-		display: block;
-	    position: absolute;
-	    margin: 0;
-	    border-top-left-radius: 0;
-	    border-bottom-left-radius: 0;
-	}
-}
-
-@media (min-width: 992px) {
-	.first-post-image {
-		background: $red;
-		margin-left: 0;
-		margin-right: 0;
-		padding-right: 0;
-		padding-left: 0;
-	}
-	.caption.first-post-caption {
-		padding: 2.3em;
-		h3 {
-			font-size: 1.8em;
+	.home .container-fluid.content-box {
+			padding: 40px 0 !important;
 		}
-
-		p {
-			font-size: 1.1em;
+	}
+	.title-wrap {
+		h2 {
+			margin: 0;
+			font-size: 30px;
 		}
+		.btn-more {
+			position: absolute;
+			bottom: 30px;
+			right: 15px;
+			margin: 0;
+		}
+	}
+	.home-recent-products {
+		li {
+			a {
+				margin-bottom: 0px;
+				h3 {
+					font-size: 18px;
+				}
+			}
+		}
+	}
+
+
+@media (min-width: 1199px) {
+	.home .content-box {
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
