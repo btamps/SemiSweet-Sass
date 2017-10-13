@@ -477,6 +477,22 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/style\/sass\/partials\/newsletter.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/style\/sass\/partials\/newsletter.scss",
+		"outputAbbreviatedPath": "\/style\/sass\/css\/newsletter.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/style\/sass\/partials\/sidebar.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -521,6 +537,22 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/style\/sass\/style.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/style\/sass\/style.scss",
+		"outputAbbreviatedPath": "\/Users\/billy\/Sites\/semisweet\/wp-content\/themes\/semi-sweet-2015-theme\/style.css",
+		"outputPathIsOutsideProject": 1,
+		"outputPathIsSetByUser": 1,
+		"outputStyle": 3,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
